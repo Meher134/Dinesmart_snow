@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="660f5be6c3af22104a82f1d4e40131ed" label="Dining Orders" max_length="40" name="x_656484_dinesmart_dining_orders" type="collection">
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Order Time" mandatory="true" max_length="40" name="order_time" type="glide_date_time"/>
+        <element attributes="edge_encryption_enabled=true" label="Student Name" mandatory="true" max_length="70" name="student_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Predicted Ready Time" max_length="40" name="predicted_ready_time" type="glide_date_time"/>
+        <element attributes="edge_encryption_enabled=true" label="Pickup Slot" max_length="40" name="pickup_slot" type="glide_date_time"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Order Status" mandatory="true" max_length="40" name="order_status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Preparing your order" value="preparing_your_order"/>
+                <element inactive_on_update="false" label="Order Received" value="order_received"/>
+                <element inactive_on_update="false" label="Order Delivered" value="order_delivered"/>
+                <element inactive_on_update="false" label="Ready for Pickup" value="ready_for_pickup"/>
+            </choice>
+        </element>
+        <element label="Order Number" mandatory="true" max_length="40" name="order_number" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" label="QR Code (String)." max_length="255" name="qr_code_string" type="string"/>
+        <element display="true" label="Order Summary" mandatory="true" max_length="400" name="order_summary" type="string"/>
+        <element label="Special Instructions" max_length="250" name="special_instructions" type="string"/>
+        <element label="Student" max_length="32" name="student" reference="sys_user" type="reference"/>
+        <element label="Requested Item" max_length="32" name="requested_item" reference="sc_req_item" type="reference"/>
+        <element label="Student Email" mandatory="true" max_length="50" name="student_email" type="string"/>
+        <element label="Total Price" max_length="20" name="total_price" type="currency"/>
+        <index name="index">
+            <element name="requested_item"/>
+        </index>
+        <index name="index2">
+            <element name="student"/>
+        </index>
+    </element>
+</database>

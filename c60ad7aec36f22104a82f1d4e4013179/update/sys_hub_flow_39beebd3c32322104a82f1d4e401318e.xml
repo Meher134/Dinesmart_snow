@@ -1,0 +1,886 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>false</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=1390074000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>26000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>This flow processes new food orders from the service catalog.</description>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source/>
+        <internal_name>dining_order_processing</internal_name>
+        <label_cache>[{"name":"8dcfc600-faf4-4df7-8d62-8ce1f0c861a5.item.price","label":"3 - For Each➛Your Order Items➛Price","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"801ec725-d414-43b8-a67c-5163ea8aad94":["price"]},"attributes":{"catalogType":"6","catalogTypeLabel":"Single Line Text"}},{"name":"40bd5a7a-a6e4-4dfb-808c-5b8909e54673.item.quantity","label":"3 - For Each➛Your Order Items➛Quantity","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"c3cd5ef3-5afe-44f5-bdc0-731ed99c381c":["quantity"]},"attributes":{"catalogType":"6","catalogTypeLabel":"Single Line Text"}},{"name":"40bd5a7a-a6e4-4dfb-808c-5b8909e54673.item.menu_item","label":"3 - For Each➛Your Order Items➛Menu Item","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"c3cd5ef3-5afe-44f5-bdc0-731ed99c381c":["values","menu_item"]},"attributes":{"catalogType":"8","catalogTypeLabel":"Reference"}},{"name":"673ac33e-5a61-446e-8494-76acc7a42e4e.record","label":"1 - Create Record➛Dining Orders Record","reference":"x_656484_dinesmart_dining_orders","reference_display":"Dining Orders","type":"reference","base_type":"reference","usedInstances":{"c3cd5ef3-5afe-44f5-bdc0-731ed99c381c":["order"],"a71b088e-916d-4b3e-bcdd-36b075896f95":["record"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"29e153b2-f9f3-4676-9a75-00617a36ab01.your_order_items","label":"2 - Get Catalog Variables➛your_order_items","reference":"","reference_display":"your_order_items","type":"array.object","base_type":"array.object","usedInstances":{"40bd5a7a-a6e4-4dfb-808c-5b8909e54673":["items"]},"attributes":{"child_label":"Your Order Items","child_type_label":"Object","child_type":"object","child_name":"your_order_items"}},{"name":"Service Catalog_1.request_item","label":"Trigger - Service Catalog➛Requested Item Record","reference":"sc_req_item","reference_display":"Requested Item","type":"reference","base_type":"reference","usedInstances":{"29e153b2-f9f3-4676-9a75-00617a36ab01":["requested_item"],"8f799eed-b67e-4c03-bca8-e683e27ef5e5":["requested_item"],"bfdcf959-ea22-4ed1-a77e-31ecf3bd2925":["record"],"bdad6afb-6ed8-40a6-b446-c2fc8ad262ec":["record"],"9542197d-781e-477f-8cf3-30b86b71412e":["record"],"9420a05e-de53-4f44-a7d2-765f3f2edfab":["record"],"8f62b826-2b6c-4d9f-b5c1-cf20fed36a83":["record"],"4060e88a-8eba-4f68-8cc0-4a468766de84":["requested_item"]},"attributes":{"default_search_field":"number"}},{"name":"Service Catalog_1.request_item.requested_for","label":"Trigger - Service Catalog➛Requested Item Record➛Requested for","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"sc_req_item","column_name":"requested_for","usedInstances":{"673ac33e-5a61-446e-8494-76acc7a42e4e":["student"],"4060e88a-8eba-4f68-8cc0-4a468766de84":["student"]}},{"name":"8f799eed-b67e-4c03-bca8-e683e27ef5e5.your_order_items","label":"2 - Get Catalog Variables➛your_order_items","reference":"","reference_display":"your_order_items","type":"array.object","base_type":"array.object","usedInstances":{"8dcfc600-faf4-4df7-8d62-8ce1f0c861a5":["items"]},"attributes":{"child_label":"Your Order Items","child_type_label":"Object","child_type":"object","child_name":"your_order_items"}},{"name":"4060e88a-8eba-4f68-8cc0-4a468766de84.record","label":"1 - Create Record➛Dining Orders Record","reference":"x_656484_dinesmart_dining_orders","reference_display":"Dining Orders Record","type":"reference","base_type":"reference","usedInstances":{"801ec725-d414-43b8-a67c-5163ea8aad94":["order"],"7b5a6979-0c2a-4444-b601-3fed2cbd1f0e":["record"],"f5947d49-202f-4ae1-aec8-08b49cd25bc4":["ah_subject"],"01a21a8f-962d-49a6-aaa9-61c6dfdcc133":["record"],"15cb625c-1519-40f3-ad5e-89afa4c2a9c9":["record"],"7f9c6d58-6445-4e87-9408-79c81663887b":["record"],"92365ac9-93ce-494c-b2f4-f64f43d321ff":["dining_order"],"9f325936-4952-47b0-aa74-6762eb3e06e1":["record"],"05cb6c99-a770-4701-8668-bb47015e2e97":["record"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"8dcfc600-faf4-4df7-8d62-8ce1f0c861a5.item.menu_item","label":"3 - For Each➛Your Order Items➛Menu Item","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"801ec725-d414-43b8-a67c-5163ea8aad94":["menu_item"]},"attributes":{"catalogType":"8","catalogTypeLabel":"Reference"}},{"name":"8dcfc600-faf4-4df7-8d62-8ce1f0c861a5.item.quantity","label":"3 - For Each➛Your Order Items➛Quantity","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"801ec725-d414-43b8-a67c-5163ea8aad94":["quantity"]},"attributes":{"catalogType":"6","catalogTypeLabel":"Single Line Text"}},{"name":"4060e88a-8eba-4f68-8cc0-4a468766de84.record.student_email","label":"1 - Create Record➛Dining Orders Record➛Student Email","reference":"","reference_display":"Student Email","type":"string","base_type":"string","parent_table_name":"x_656484_dinesmart_dining_orders","column_name":"student_email","usedInstances":{}},{"name":"Service Catalog_1.request_item.requested_for.email","label":"Trigger - Service Catalog➛Requested Item Record➛Requested for➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"sys_user","column_name":"email","usedInstances":{"f5947d49-202f-4ae1-aec8-08b49cd25bc4":["ah_to"]}},{"name":"4060e88a-8eba-4f68-8cc0-4a468766de84.record.total_price","label":"1 - Create Record➛Dining Orders Record➛Total Price","reference":"","reference_display":"Total Price","type":"currency","base_type":"currency","parent_table_name":"x_656484_dinesmart_dining_orders","column_name":"total_price","usedInstances":{}},{"name":"4060e88a-8eba-4f68-8cc0-4a468766de84.record.sys_id","label":"1 - Create Record➛Dining Orders Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"x_656484_dinesmart_dining_orders","column_name":"sys_id","usedInstances":{"dda0866b-dde3-4046-8e22-b4b8d01f7387":["log_message"],"af9fd4fc-a824-48b5-9ab8-9da9d9050a2d":["log_message"]}}]</label_cache>
+        <master_snapshot>dc62c02bc3a322104a82f1d4e40131ec</master_snapshot>
+        <master_snapshot_digest/>
+        <name>Dining Order Processing</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id>6862042bc3a322104a82f1d4e4013167</remote_trigger_id>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>draft</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-29 16:12:58</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>39beebd3c32322104a82f1d4e401318e</sys_id>
+        <sys_mod_count>168</sys_mod_count>
+        <sys_name>Dining Order Processing</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="DineSmart" source="x_656484_dinesmart">c60ad7aec36f22104a82f1d4e4013179</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="DineSmart">c60ad7aec36f22104a82f1d4e4013179</sys_scope>
+        <sys_update_name>sys_hub_flow_39beebd3c32322104a82f1d4e401318e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-15 06:27:21</sys_updated_on>
+        <type>flow</type>
+        <version>2</version>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=39beebd3c32322104a82f1d4e401318e"/>
+    <sys_variable_value action="delete_multiple" query="document_key=39beebd3c32322104a82f1d4e401318e"/>
+    <sys_flow_catalog_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <catalog_item/>
+        <name/>
+        <run_flow_in/>
+        <sys_class_name>sys_flow_catalog_trigger</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-29 17:38:54</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>6862042bc3a322104a82f1d4e4013167</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-29 18:44:21</sys_updated_on>
+    </sys_flow_catalog_trigger>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=39beebd3c32322104a82f1d4e401318e"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=39beebd3c32322104a82f1d4e401318e"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=39beebd3c32322104a82f1d4e401318e^sys_idNOT IN31bea713c36322104a82f1d4e4013175"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>39beebd3c32322104a82f1d4e401318e</id>
+        <name>Dining Order Processing</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-29 16:12:58</sys_created_on>
+        <sys_id>31bea713c36322104a82f1d4e4013175</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-29 16:12:58</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=31bea713c36322104a82f1d4e4013175"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=39beebd3c32322104a82f1d4e401318e^sys_idNOT IN015e33d3c3a322104a82f1d4e401311f,745e33d3c3a322104a82f1d4e4013119"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>sc_req_item</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Dining Order Processing">39beebd3c32322104a82f1d4e401318e</model>
+        <model_id>39beebd3c32322104a82f1d4e401318e</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_39beebd3c32322104a82f1d4e401318e</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-29 17:21:10</sys_created_on>
+        <sys_id>015e33d3c3a322104a82f1d4e401311f</sys_id>
+        <sys_mod_count>249</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="DineSmart">c60ad7aec36f22104a82f1d4e4013179</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-15 06:27:21</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=015e33d3c3a322104a82f1d4e401311f"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>default_search_field=number,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>request_item</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Request Item</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Dining Order Processing">39beebd3c32322104a82f1d4e401318e</model>
+        <model_id>39beebd3c32322104a82f1d4e401318e</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_39beebd3c32322104a82f1d4e401318e</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="sc_req_item">sc_req_item</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-29 17:21:10</sys_created_on>
+        <sys_id>745e33d3c3a322104a82f1d4e4013119</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="DineSmart">c60ad7aec36f22104a82f1d4e4013179</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-29 17:21:10</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=745e33d3c3a322104a82f1d4e4013119"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=39beebd3c32322104a82f1d4e401318e"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=39beebd3c32322104a82f1d4e401318e"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=39beebd3c32322104a82f1d4e401318e^sys_idNOT IN8d5e33d3c3a322104a82f1d4e401316e"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Dining Order Processing">39beebd3c32322104a82f1d4e401318e</flow>
+        <name>Service Catalog</name>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-29 17:21:11</sys_created_on>
+        <sys_id>8d5e33d3c3a322104a82f1d4e401316e</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-29 17:30:29</sys_updated_on>
+        <trigger_definition display_value="Service Catalog">c43a1011c36813002841b63b12d3ae15</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/81T32vbMBD+V4yeNkjASdZm8dsYFAJdO5ptL6EYWTo7YrLkSbJbL+R/38k/YqczZbCXvkl3p7vv033f/kgkTUCSiDyUKriR+inYKjIjQjkwispvdQGYZActGGC8PdwK60i0P5L0B5WlL8BUett1ms+DO60gmM99dJvTrK/YgQTmgJMopdICRr7b8e2LsFaorAucZqMBCWU/M6NLxcejPOjUgxYqGCqCdxxSWkr3/iWAr9TQHJCaJdGRKDxjwtY29k1iA0wbHjsjsgwM1nMoQHFQLq48DHy0J+Tx9H9MUm3gdSaXFW8B/+OM5FRx6rSpz0U4C6dEizCckab/rrZb3iLtoJlStdCEF1U1iIULW0haj+RT9NQ8M3YQkhtQCBhHC9/0OtyEbL3crNfLcLUKw/QqSVnK2PrjIrxeXG2wxbSUJ6G4F7oec4Fn539t+I2/qRug/F7JIXBAw7Q8cvpsxW9s/iH0dSkgDdZxPF/jjn8bblHYxlHy35VdTVmjJ+IlN9XrQlvVlCS7Dku/9G7a5zcLsP26+8IJjWIhK79amsjXbcG0LHN1N6WLDv1Il6XFbfU+GgyyO+inh36dN0I1kLqk1IzK8406nJyUDhrPUl5RfOEV7QzOODWqiH+V/gW58GzDyBdYZkThPjEnKjg78g/OPAvFuwUAAA==</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>service_catalog</trigger_type>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=39beebd3c32322104a82f1d4e401318e^sys_idNOT IN015e33d3c3a322104a82f1d4e4013175,895e33d3c3a322104a82f1d4e4013170,895e33d3c3a322104a82f1d4e4013172,95738d53c3b322104a82f1d4e4013198"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
+        <action_type_parent display_value="Create Record">02f0b88cc3c632002841b63b12d3aeff</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Dining Order Processing">39beebd3c32322104a82f1d4e401318e</flow>
+        <generation_source/>
+        <order>4</order>
+        <parent_ui_id>8dcfc600-faf4-4df7-8d62-8ce1f0c861a5</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-29 17:21:11</sys_created_on>
+        <sys_id>015e33d3c3a322104a82f1d4e4013175</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="DineSmart">c60ad7aec36f22104a82f1d4e4013179</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-14 18:16:37</sys_updated_on>
+        <ui_id>801ec725-d414-43b8-a67c-5163ea8aad94</ui_id>
+        <values>H4sIAAAAAAAA/+1V32/TMBD+Vyw/jjZL2ixk5WkSTPAAkxjiZRuRY19aI8cJtlNapvzvnJ2kjB9DAyEhJPbS+Xz33ffdnS9Xt1QKuqJZAvHJaZLxZbJcLuJ4kadJmS3LZCGWDCClM6pZDejpWKmgCIcZ3TLVeeOuyE6yNE8LITXYmhlXNEaAKaSD2qKjkLZVbP929L/wl+TFeMk3UgkDmq6ubma0ZQbBHRi6uv3myu1bKBQrQSHGG0+EvBqIPFTEV8H3iPJZvrUFNXQVzyjsHGgBmK9iysKM1kwL5hqzpytnOjQYYOJCq/3BYyO1Q0DqfXdWfkL0PPZ+FaA0DsPd4ViMxRrMfNNIDhetk40eLIHYeNmortavBhG+zFCxTrmpzGjpLOJB6yl7EiOj6nLTfHw9JTyXOqgbL1XDmTqcmHNGlp0D6/sBCmoEKmrWtlKvi9Y0WxmCkUsdrRUeoko1HzGplWsdMe6JR1ghFp2j/Wkwv2VGehUvEQaD+6C++ND5vIOOkXExiEYHy41s3RnCbWEk18+m6RUQn97b+KT80ugwsPbO5IbGXndxvBS3t2mcxZDnbJ5DyeZpleXznPN4nrI0yx9nmCZPIwMcg/r+HRaiCwM+heeCVzyL43nFqnSeiurxPBfZAjEgqWKeZwk7iXxAdAhFGFStnXT7X0eZIhGkNTgkv44Qwvr++wf6vyxDWX5zNUGNxXRAhnLOHjylE8C5BCXsD8Z22k1jgmI7Jhj3U/Kn9lOCdfJ/f2dLDTz/sSV153vx43U1GT3FMGH+n5/60eOja310dMY5WEs8s+OzQJV4qqSzqI64DZBKFMHSlO+Bu4hcBgBSd9YRA64zmjASZiUiHnH4/uquLvFHWtJUlQVHyj15lBCpyTNjGkOe4+Qon+IShgIFMlsmVfj0NqHbloyDQLoWibUGqfqYaxpdU8IqfC0TPR8OO4ajCytkY4jdNMZhsTkZ3ujkGGE312swEe8MNt9FwdF3K+jCrE881qjsgOKNx9gYy7Ygpun6nXff9/3NZ9NYdesaCQAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
+        <action_type_parent display_value="Create Record">02f0b88cc3c632002841b63b12d3aeff</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Dining Order Processing">39beebd3c32322104a82f1d4e401318e</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-29 17:21:11</sys_created_on>
+        <sys_id>895e33d3c3a322104a82f1d4e4013170</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="DineSmart">c60ad7aec36f22104a82f1d4e4013179</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-14 18:06:22</sys_updated_on>
+        <ui_id>4060e88a-8eba-4f68-8cc0-4a468766de84</ui_id>
+        <values>H4sIAAAAAAAA/9VUy27bMBD8FYNnQZAsR3B8Kxr41hhoilzShKDElU2AIhWSUuwa+vcuKcl5NAGMokBbn7yzr5ldru6ORHCyInkKycVlmpdZmmXzJJkvF2mRZ0U65xkDWJCIKFYDRjpWSKDBiEjHZOvBPc0v8sVyQblQYGtmnP8n1JZqw8FYDOXCNpIdbseMq+CebSZ3uROSG1BkdXcfkYYZbODAkNXxjcsdGqCSFSCxyjdPZnY9kDlXyKvkD4T5Lm+xIIWskojA3oHigP0qJi1EpGaKM6fNgaycaREwwPhGycMpYieUw4LEx+6t+IHVl4mPqwCllTD4TiYdxzXA5U6LEjaNE1oNSCA2OrVsa3U9iPCDhoq10k2DRqS1WA8aT9mTGBlVNzv99HVquBYqqBudUpdMnizmnBFF68D6fYCEGgvRmjWNX3FjdCdCMnKp461EI66kfsKmVmxVzEpPPMYJsXiN+FWAb5kRXsUXLIPJfVBPH1vfd9AxMqaDaAywpRGN+4TlOhjJ9dH0gjkklx8uPi2eFx0erX3xeq1rfZ/vbZJk/Hi8AdPhuGefka/UW5rGBh4xw1HhoJ4M4LTSpu8fwrOg1jHX2qHEgBgoAXnyh+cEn39el77/9WT+VZq/ebpQozgHs0FedPYWpwJrAZLbd9Y63e7YgHZjg/F+0z91v2mehN/fueKB5392xC++p++f8wQixb6//wnXN4rDngYAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Get Catalog Variables">330ba3abc31013002841b63b12d3aee8</action_type>
+        <action_type_parent display_value="Get Catalog Variables">22f0b88cc3c632002841b63b12d3aeff</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Dining Order Processing">39beebd3c32322104a82f1d4e401318e</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-29 17:21:11</sys_created_on>
+        <sys_id>895e33d3c3a322104a82f1d4e4013172</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="DineSmart">c60ad7aec36f22104a82f1d4e4013179</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-29 17:30:29</sys_updated_on>
+        <ui_id>8f799eed-b67e-4c03-bca8-e683e27ef5e5</ui_id>
+        <values>H4sIAAAAAAAA/+VUXWvbMBT9K8bPIfgjS7u8dSuFPWwdzehLKUKWrxMxWXYl2WkW8t93JctO+pWG0sJg+MlX9+Oco3t0swl5Hs7CrIgymtKMpXEUp1GUnE7ibJpmcZKnFICGo1DSEjBTwV0D2kBOuIES4y0VjT3YbOagWs4g+EoNFdWCxGOf7FK3W0zOua4FXV/7GoywJRe5AhnObm5HYU0VjjGgwtnm0ZFZ10AEzUBg4RUUgCcMsMOxBPraeZOV3CCD4KqDd4CcHeriu3GVyi28aBTCvQGZA44vqNAwCksqc2oqtQ5nRjUYUEDzSynWQ8aSS9PxLum95n+weZqM9vrPQs0IwugBDCfES+fIe5TBty6JLSvU/bI2vJJdd0Mz0QtciaaUPzqC9gqgoI0we1fQaOwOteVi0XmoxXxZrQadL7h0tP2hqBgVwx81RvGsMaDttYGAEhuRktY1lwtSq6rlrhixlOOFwJ9xIaoVDtV8IceUWeBjlI6OLzB+7sLXVHHL4ju2wWIUHoUkuarq2pOzGodbpxG5ayyejp9nQjoxMEEzxWtzhmNa8KC3o37zs0OLU8S75UCt8QIMEOb3+5EBTpLsE2AzlkI6TeJoQk+TIs4nMMHGcRI/Xf+fgqJdaHDOJQoVXLrNej9LvM6sr/3lqfXWdYulA1znoL+GYA5Gvy7Gy4aJP8wwhui1fgBEE2xMWg+d6A76c156nfD/YS6u8dUpK7xQx47sC+x8hi5CyCglVWy5Cy5xHlGNNLwE4pxAuCRVrVsOq/fy6MnhTT7ZrWW/BP3V6z1/ThP8omz6vD8/T2Z2cxC61YtIsFzNU8++scvbPD0XjV4GXxr22zU5Voy+vF/u6z01Dgjlvavt0Kyf6d2bHHavjxxj3ziJouihg1/w5j9nPjRJgY8eyrDTDe8YnCihK8GhH2XRo6yGSyKZaDCzRCm4wikDVPueDWlWmj0QoMhKdZOGlFphjWrt+ymAGUeyfwuqRjH/VmD00c6/2fC3fwGeaefPkAoAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Send Email">c1806bf4a70323008299b39f087901cb</action_type>
+        <action_type_parent display_value="Send Email">98c181d20b100300d97d8bf637673ab5</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Dining Order Processing">39beebd3c32322104a82f1d4e401318e</flow>
+        <generation_source/>
+        <order>5</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-10 14:00:26</sys_created_on>
+        <sys_id>95738d53c3b322104a82f1d4e4013198</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="DineSmart">c60ad7aec36f22104a82f1d4e4013179</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-14 17:54:12</sys_updated_on>
+        <ui_id>f5947d49-202f-4ae1-aec8-08b49cd25bc4</ui_id>
+        <values>H4sIAAAAAAAA/+2YUW/iOBDHv4qVZ5oLEELo215RdSvdbqUt2tNptYoc2wHfOXHWccpyiO++48QhpGwpgrbak3hrnMz4PzO/Gbt8WTucOteOT0MviBMfj73hYOh54WAyiYeTxAvHE69PqNNzMpwy+FIxIpV5fsCiNAvwJ+VFLvDqc7tCFlxQxTLn+svXnpNjBcaaKed6/eiVXuUsEjhmAgynkpQpyzR6PwUfxwprrGdYzZlGnxqBjwWbreCZ2k0ibhbhlZHl9Rz2XbOMMtg0waJgPSfFGcVaqtV2RTFM7zLRLix4psHlu6KQhGPNCqQXDLEUc4GWXC8QRvX2rmP8fS/4fyBhODCuEgZJIEYRzwinoMjZWY5sTuH1+/Y1WUhO2F2uuczqRGsciybnUpRp9rGO2lSFJbgUeqcqZQF+WW7CNLq1KiGG5H4hl5+afW95ViXEBigkwWL7hLVWPC4hzqqQgmHV+osqScYn7MQEq3Kc4jzn2TzKlXzglWOQmbpzAQ9uIuQS7As+z1xMTEwuJBy7t7A+rZY/Y8VNgB/ADRhvqgRF30qjqQ6xu7n5NqrqDp8WRPFcvwPHD8yGsOlZ3vuTQ1hRv8Vnx+erMD8z/tHH2v+x2jrGT2i1uHfWLO39s2ifAeK67rUabqStjC3hodcl/AmyX5xoK/RkpF8HW6hrEdU02tiqzZ/F+TmIvSCI4yAejYctKBOS0HGcBHhMhi0YS5hNKsXq36iaTTsk9/dRti18Is5g/NttFV7vaJWNMUw6UVKG/mrkHorA8h1LCXMoa+EenAV3TSLSEkHtxAoG+HZns9iOd73AGvECFVAuF80k4lb8jkUPrWSJ0rLQ8JmGN5226ZwJ/pt0jC2tXZ3+tO7/i5Y6t3VGh2csbsHDi0jLnYZZr++ZeoAKoBtQKOQ86ruKfStZATcKzdLmgdEokcqtYNls0H6bne7otM68h6pk86Yrj0jAtqXlfjZs8xWNT9t7w8O9V1849lpv59jwLgdH5+CgTPCUV8Wt+/Nc8OnBujOvU2pCXufO00XxCEmN4c3Nvr4nUPRPOwYuLL4di/2D/9uxoFPr+G1gPEJTY/j7IxrjQziOLjj+6jiODpeedIpdlPE/jOgdJP+WpTI/PpjfL9Zr3ws8Fob4KmQxvvKTILwKCfGufOwH4TgIKAt9t74HbjZTnkFm0F2Fyh7ZL+f4RS4Oz2dpa7jN0c/y9kSjBJcrxK90UcYHy50MuhNQ0tXrDOk/Zh/+bAg8QtJ2RNeC9hRa9hY6FS154zNHdDAaDYMLe7szOl/SAVUyz21sZ83prz8Apbv5hq0WAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=39beebd3c32322104a82f1d4e401318e"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=39beebd3c32322104a82f1d4e401318e^sys_idNOT IN0d5e33d3c3a322104a82f1d4e4013173"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">415e33d3c3a322104a82f1d4e4013173</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Dining Order Processing">39beebd3c32322104a82f1d4e401318e</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>3</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-29 17:21:11</sys_created_on>
+        <sys_id>0d5e33d3c3a322104a82f1d4e4013173</sys_id>
+        <sys_mod_count>125</sys_mod_count>
+        <sys_scope display_value="DineSmart">c60ad7aec36f22104a82f1d4e4013179</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-15 06:27:21</sys_updated_on>
+        <ui_id>8dcfc600-faf4-4df7-8d62-8ce1f0c861a5</ui_id>
+        <values>H4sIAAAAAAAA/61TTW/bMAz9Lzonhm3lw8mtwFAgwLYCbdHLUBi0RCfCZMmT5KSekf8+ynZSoOfdzEfq8T2SHpjtQtsF/2ofvFdHw/a/3hdMmYjR98BqbS/f7VGJg/EBjMCX3h8k27NUrpFzyQUHnudZuoIirzO5wlWa8WzL2YIZaJAqVcDGU3gG3cV4GIp6u9shymW12eJyJVK+rAQUS9wUHPMt1mtcJ73tXGmdRFeODNcrcUjlWw3923+gEielpcPZcguO1AZ0bD98SYW+xVJDhZo6PqMgomhHxSlkO1nvsnQneL7heZrmxSqrNrzKcskB5Ybqbi8P8xi+TCWyU+juvKNOts/TBcOPgEYiNapBe1ywBoyEYF3P9sF1BDgE+WR0f684KROIjsXaD6/+EneWprGwRnIkcErew3Ke6ASLk1UCn9qgrJmQAJWe3wiru8b8nOTHXWANnQ63XRDSeeLDNmqOKmZJ9cvJXp5vDR+VGf3NSW0F6HsEIThVdQF9XANqbIiobKBtlTmWrbNnNT4mLU1y1BQk8UCpaTzeBEQUntCIIHkk/NsIv4FT0cUPoqHH19F9+aeLfScfs+JyMk0FXjjVhgeiO+Ms7voeL3hi8tNhSBTKU8PXiB1u/0xM9LTk+Mt8Qhfrfkepn9j1H7TqiB99AwAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=39beebd3c32322104a82f1d4e401318e"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=39beebd3c32322104a82f1d4e401318e"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_39beebd3c32322104a82f1d4e401318e^sys_idNOT INc15e33d3c3a322104a82f1d4e401311e,c95e33d3c3a322104a82f1d4e401312f"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>request_item</element>
+        <help/>
+        <hint/>
+        <label>Request Item</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_39beebd3c32322104a82f1d4e401318e</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-29 17:21:10</sys_created_on>
+        <sys_id>c15e33d3c3a322104a82f1d4e401311e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="DineSmart" source="x_656484_dinesmart">c60ad7aec36f22104a82f1d4e4013179</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="DineSmart">c60ad7aec36f22104a82f1d4e4013179</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-29 17:21:10</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_39beebd3c32322104a82f1d4e401318e</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-29 17:21:11</sys_created_on>
+        <sys_id>c95e33d3c3a322104a82f1d4e401312f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="DineSmart" source="x_656484_dinesmart">c60ad7aec36f22104a82f1d4e4013179</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="DineSmart">c60ad7aec36f22104a82f1d4e4013179</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-29 17:21:11</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_39beebd3c32322104a82f1d4e401318e"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_39beebd3c32322104a82f1d4e401318e"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_39beebd3c32322104a82f1d4e401318e"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>26000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>This flow processes new food orders from the service catalog.</description>
+        <flow_priority>MEDIUM</flow_priority>
+        <internal_name>dining_order_processing</internal_name>
+        <label_cache>[{"name":"8dcfc600-faf4-4df7-8d62-8ce1f0c861a5.item.price","label":"3 - For Each➛Your Order Items➛Price","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"801ec725-d414-43b8-a67c-5163ea8aad94":["price"]},"attributes":{"catalogType":"6","catalogTypeLabel":"Single Line Text"}},{"name":"40bd5a7a-a6e4-4dfb-808c-5b8909e54673.item.quantity","label":"3 - For Each➛Your Order Items➛Quantity","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"c3cd5ef3-5afe-44f5-bdc0-731ed99c381c":["quantity"]},"attributes":{"catalogType":"6","catalogTypeLabel":"Single Line Text"}},{"name":"40bd5a7a-a6e4-4dfb-808c-5b8909e54673.item.menu_item","label":"3 - For Each➛Your Order Items➛Menu Item","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"c3cd5ef3-5afe-44f5-bdc0-731ed99c381c":["values","menu_item"]},"attributes":{"catalogType":"8","catalogTypeLabel":"Reference"}},{"name":"673ac33e-5a61-446e-8494-76acc7a42e4e.record","label":"1 - Create Record➛Dining Orders Record","reference":"x_656484_dinesmart_dining_orders","reference_display":"Dining Orders","type":"reference","base_type":"reference","usedInstances":{"c3cd5ef3-5afe-44f5-bdc0-731ed99c381c":["order"],"a71b088e-916d-4b3e-bcdd-36b075896f95":["record"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"29e153b2-f9f3-4676-9a75-00617a36ab01.your_order_items","label":"2 - Get Catalog Variables➛your_order_items","reference":"","reference_display":"your_order_items","type":"array.object","base_type":"array.object","usedInstances":{"40bd5a7a-a6e4-4dfb-808c-5b8909e54673":["items"]},"attributes":{"child_label":"Your Order Items","child_type_label":"Object","child_type":"object","child_name":"your_order_items"}},{"name":"Service Catalog_1.request_item","label":"Trigger - Service Catalog➛Requested Item Record","reference":"sc_req_item","reference_display":"Requested Item","type":"reference","base_type":"reference","usedInstances":{"29e153b2-f9f3-4676-9a75-00617a36ab01":["requested_item"],"8f799eed-b67e-4c03-bca8-e683e27ef5e5":["requested_item"],"bfdcf959-ea22-4ed1-a77e-31ecf3bd2925":["record"],"bdad6afb-6ed8-40a6-b446-c2fc8ad262ec":["record"],"9542197d-781e-477f-8cf3-30b86b71412e":["record"],"9420a05e-de53-4f44-a7d2-765f3f2edfab":["record"],"8f62b826-2b6c-4d9f-b5c1-cf20fed36a83":["record"],"4060e88a-8eba-4f68-8cc0-4a468766de84":["requested_item"]},"attributes":{"default_search_field":"number"}},{"name":"Service Catalog_1.request_item.requested_for","label":"Trigger - Service Catalog➛Requested Item Record➛Requested for","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"sc_req_item","column_name":"requested_for","usedInstances":{"673ac33e-5a61-446e-8494-76acc7a42e4e":["student"],"4060e88a-8eba-4f68-8cc0-4a468766de84":["student"]}},{"name":"8f799eed-b67e-4c03-bca8-e683e27ef5e5.your_order_items","label":"2 - Get Catalog Variables➛your_order_items","reference":"","reference_display":"your_order_items","type":"array.object","base_type":"array.object","usedInstances":{"8dcfc600-faf4-4df7-8d62-8ce1f0c861a5":["items"]},"attributes":{"child_label":"Your Order Items","child_type_label":"Object","child_type":"object","child_name":"your_order_items"}},{"name":"4060e88a-8eba-4f68-8cc0-4a468766de84.record","label":"1 - Create Record➛Dining Orders Record","reference":"x_656484_dinesmart_dining_orders","reference_display":"Dining Orders","type":"reference","base_type":"reference","usedInstances":{"801ec725-d414-43b8-a67c-5163ea8aad94":["order"],"7b5a6979-0c2a-4444-b601-3fed2cbd1f0e":["record"],"f5947d49-202f-4ae1-aec8-08b49cd25bc4":["ah_subject"],"01a21a8f-962d-49a6-aaa9-61c6dfdcc133":["record"],"15cb625c-1519-40f3-ad5e-89afa4c2a9c9":["record"],"7f9c6d58-6445-4e87-9408-79c81663887b":["record"],"92365ac9-93ce-494c-b2f4-f64f43d321ff":["dining_order"],"9f325936-4952-47b0-aa74-6762eb3e06e1":["record"],"05cb6c99-a770-4701-8668-bb47015e2e97":["record"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"8dcfc600-faf4-4df7-8d62-8ce1f0c861a5.item.menu_item","label":"3 - For Each➛Your Order Items➛Menu Item","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"801ec725-d414-43b8-a67c-5163ea8aad94":["menu_item"]},"attributes":{"catalogType":"8","catalogTypeLabel":"Reference"}},{"name":"8dcfc600-faf4-4df7-8d62-8ce1f0c861a5.item.quantity","label":"3 - For Each➛Your Order Items➛Quantity","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"801ec725-d414-43b8-a67c-5163ea8aad94":["quantity"]},"attributes":{"catalogType":"6","catalogTypeLabel":"Single Line Text"}},{"name":"4060e88a-8eba-4f68-8cc0-4a468766de84.record.student_email","label":"1 - Create Record➛Dining Orders Record➛Student Email","reference":"","reference_display":"Student Email","type":"string","base_type":"string","parent_table_name":"x_656484_dinesmart_dining_orders","column_name":"student_email","usedInstances":{}},{"name":"Service Catalog_1.request_item.requested_for.email","label":"Trigger - Service Catalog➛Requested Item Record➛Requested for➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"sys_user","column_name":"email","usedInstances":{"f5947d49-202f-4ae1-aec8-08b49cd25bc4":["ah_to"]}},{"name":"4060e88a-8eba-4f68-8cc0-4a468766de84.record.total_price","label":"1 - Create Record➛Dining Orders Record➛Total Price","reference":"","reference_display":"Total Price","type":"currency","base_type":"currency","parent_table_name":"x_656484_dinesmart_dining_orders","column_name":"total_price","usedInstances":{}},{"name":"4060e88a-8eba-4f68-8cc0-4a468766de84.record.sys_id","label":"1 - Create Record➛Dining Orders Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"x_656484_dinesmart_dining_orders","column_name":"sys_id","usedInstances":{"dda0866b-dde3-4046-8e22-b4b8d01f7387":["log_message"],"af9fd4fc-a824-48b5-9ab8-9da9d9050a2d":["log_message"]}}]</label_cache>
+        <master>true</master>
+        <name>Dining Order Processing</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Dining Order Processing">39beebd3c32322104a82f1d4e401318e</parent_flow>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-29 17:38:53</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>dc62c02bc3a322104a82f1d4e40131ec</sys_id>
+        <sys_mod_count>52</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="DineSmart">c60ad7aec36f22104a82f1d4e4013179</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-14 18:20:54</sys_updated_on>
+        <type>flow</type>
+        <version>2</version>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=dc62c02bc3a322104a82f1d4e40131ec"/>
+    <sys_variable_value action="delete_multiple" query="document_key=dc62c02bc3a322104a82f1d4e40131ec"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=dc62c02bc3a322104a82f1d4e40131ec"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=dc62c02bc3a322104a82f1d4e40131ec^sys_idNOT IN5862c02bc3a322104a82f1d4e40131ed"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>dc62c02bc3a322104a82f1d4e40131ec</id>
+        <name>Dining Order Processing</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-29 17:38:53</sys_created_on>
+        <sys_id>5862c02bc3a322104a82f1d4e40131ed</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-29 17:38:53</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=5862c02bc3a322104a82f1d4e40131ed"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=dc62c02bc3a322104a82f1d4e40131ec^sys_idNOT INd462c02bc3a322104a82f1d4e40131ee,e462042bc3a322104a82f1d4e4013132"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>sc_req_item</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Dining Order Processing">dc62c02bc3a322104a82f1d4e40131ec</model>
+        <model_id>dc62c02bc3a322104a82f1d4e40131ec</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_dc62c02bc3a322104a82f1d4e40131ec</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>true</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-29 17:38:53</sys_created_on>
+        <sys_id>d462c02bc3a322104a82f1d4e40131ee</sys_id>
+        <sys_mod_count>209</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="DineSmart">c60ad7aec36f22104a82f1d4e4013179</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-14 18:20:54</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=d462c02bc3a322104a82f1d4e40131ee"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>default_search_field=number,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>request_item</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Request Item</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Dining Order Processing">dc62c02bc3a322104a82f1d4e40131ec</model>
+        <model_id>dc62c02bc3a322104a82f1d4e40131ec</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_dc62c02bc3a322104a82f1d4e40131ec</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="sc_req_item">sc_req_item</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-29 17:38:53</sys_created_on>
+        <sys_id>e462042bc3a322104a82f1d4e4013132</sys_id>
+        <sys_mod_count>103</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="DineSmart">c60ad7aec36f22104a82f1d4e4013179</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-14 18:20:54</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=e462042bc3a322104a82f1d4e4013132"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=dc62c02bc3a322104a82f1d4e40131ec"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=dc62c02bc3a322104a82f1d4e40131ec"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=dc62c02bc3a322104a82f1d4e40131ec^sys_idNOT IN2462042bc3a322104a82f1d4e4013143"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Dining Order Processing">dc62c02bc3a322104a82f1d4e40131ec</flow>
+        <name>Service Catalog</name>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-29 17:38:54</sys_created_on>
+        <sys_id>2462042bc3a322104a82f1d4e4013143</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-29 17:38:54</sys_updated_on>
+        <trigger_definition display_value="Service Catalog">c43a1011c36813002841b63b12d3ae15</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/81T32vbMBD+V4yeNkjASdZm8dsYFAJdO5ptL6EYWTo7YrLkSbJbL+R/38k/YqczZbCXvkl3p7vv033f/kgkTUCSiDyUKriR+inYKjIjQjkwispvdQGYZActGGC8PdwK60i0P5L0B5WlL8BUett1ms+DO60gmM99dJvTrK/YgQTmgJMopdICRr7b8e2LsFaorAucZqMBCWU/M6NLxcejPOjUgxYqGCqCdxxSWkr3/iWAr9TQHJCaJdGRKDxjwtY29k1iA0wbHjsjsgwM1nMoQHFQLq48DHy0J+Tx9H9MUm3gdSaXFW8B/+OM5FRx6rSpz0U4C6dEizCckab/rrZb3iLtoJlStdCEF1U1iIULW0haj+RT9NQ8M3YQkhtQCBhHC9/0OtyEbL3crNfLcLUKw/QqSVnK2PrjIrxeXG2wxbSUJ6G4F7oec4Fn539t+I2/qRug/F7JIXBAw7Q8cvpsxW9s/iH0dSkgDdZxPF/jjn8bblHYxlHy35VdTVmjJ+IlN9XrQlvVlCS7Dku/9G7a5zcLsP26+8IJjWIhK79amsjXbcG0LHN1N6WLDv1Il6XFbfU+GgyyO+inh36dN0I1kLqk1IzK8406nJyUDhrPUl5RfOEV7QzOODWqiH+V/gW58GzDyBdYZkThPjEnKjg78g/OPAvFuwUAAA==</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>service_catalog</trigger_type>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=dc62c02bc3a322104a82f1d4e40131ec^sys_idNOT IN77730193c3b322104a82f1d4e401312e,a462042bc3a322104a82f1d4e4013140,ac62042bc3a322104a82f1d4e401313f,e862042bc3a322104a82f1d4e401313e"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Send Email">c1806bf4a70323008299b39f087901cb</action_type>
+        <action_type_parent display_value="Send Email">98c181d20b100300d97d8bf637673ab5</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>c1806bf4a70323008299b39f087901cb</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Dining Order Processing">dc62c02bc3a322104a82f1d4e40131ec</flow>
+        <generation_source/>
+        <order>5</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-10 14:00:36</sys_created_on>
+        <sys_id>77730193c3b322104a82f1d4e401312e</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="DineSmart">c60ad7aec36f22104a82f1d4e4013179</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-14 17:54:22</sys_updated_on>
+        <ui_id>f5947d49-202f-4ae1-aec8-08b49cd25bc4</ui_id>
+        <values>H4sIAAAAAAAA/+2YXW/bNhSG/wqha0eTbVmWc9fZCFYgbYA66DAUhUCRlM2NElWKiusZ/u891LftzLUTD0uw3EWHXy8P34eH8ZeNxal1bbnUd7wwcvHYGQ6GjuMPJpNwOIkcfzxx+oRaPSvBMYOeihGpzPcDFrkJwJ+UZ6nA689thCy5oIol1vWXrz0rxQoGa6as681e06mrCxwyAV3vsVowjT7VKvZV6XVqvqkkecwSHfA6eFtNMKta0PsZtMAgo8rpWey7ZgllICfCImM9K8YJxVqqdRNRDNO7RLSBJU80TPkuyyThWLMM6SVDLMZcoBXXS4RRKcy2zHzfM/43iBsOzFQRgxwQo5UnhFNQZHXCQZVSaH7fNkczrPFcq5zoXDWZlpywrMwmZRHOhZ52Y2WHu1RzmZRDNA5FPVqKPE4+lkm0mgk6J5lnIIalJjdms7A4bDyaL+XqUy32hidFFqusCEmwaL6iOcOKLG84E+aokzwOoW/PwlorHubayARTCOjVrhMUUs1a0JMJVhxljNOUJ4sgVfKBFwuC/NheCPiwIyFXMD7ji8TGxOzVhtPD9g3EZ0X4M1bcbPwDTAODtz0rW2dTgbOs3T7kP/iWG/VlMnblmNFBYTgzmCie6new1AOrNrvtVTT1J8f8TN3Wt505L0rUCQpaoowbHldU0XQQu+2ORR/Lhoql/pkslY6qULoHfnSJeEkO0pW8Bh/f2cXnH7B5Gbg0EJzMyy4X/473wSRZUBq42lux+BOY+BkJjueFoReOxsPWhxMS0XEYeXhMhq3vVnB/qhirv4Li/uzg0D/koboZzmPiBC01E3Dnipwy9Hst6pjOCpJQSrjEkn1CQOkvN0V2G0IGz6o2pTWRlggOU6yhxjSSTLCtQHqJNeIZyuC0bHQvEa921RnRQ2uZozjPNHTT0LID307Zcl8ud5UdqujsUa+8CjAvD+DoeCHArbHxMtCyg91mM2fqAc4ETUGzkIugbyv2LWcZvKo0i+sPRoNIKrvw3HaLDmF9+kTn8X3CVpuaJw/3XWGcwSkniz2K53WwInh4nOCypB0A3ClhzsuF6bWwYoQLHvPCECXll8eHHvUUc3ZsRMhlH3EnLF4bejo9VHKOod2nlaQ3R786R/eP/q/NvB0fhZe29Amr15b+dc/T4dmmHr2Z+n9i6tFxW5EdI2V5+CcjumPsP2SuzE9K5mehzcZ1PIf5Pr7yWYiv3Mjzr3xCnCsXu54/9jzKfNcuH8jb7YwnkCt0VzjugI/LTXzmU+jn+agxmzfZeCxD5+DmvT2K/nPaLo8WPmqlaLB7R0u6vmzBOGH5pmCUix+oqTy81LHYc/Bv9x9uW/+On1kuvNFo6L05+Nn1Il3RAVUyTau9XbhmfP0BQFnTA/QYAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
+        <action_type_parent display_value="Create Record">02f0b88cc3c632002841b63b12d3aeff</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>2de05916c31332002841b63b12d3aee1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Dining Order Processing">dc62c02bc3a322104a82f1d4e40131ec</flow>
+        <generation_source/>
+        <order>4</order>
+        <parent_ui_id>8dcfc600-faf4-4df7-8d62-8ce1f0c861a5</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-29 17:38:53</sys_created_on>
+        <sys_id>a462042bc3a322104a82f1d4e4013140</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="DineSmart">c60ad7aec36f22104a82f1d4e4013179</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-14 18:20:54</sys_updated_on>
+        <ui_id>801ec725-d414-43b8-a67c-5163ea8aad94</ui_id>
+        <values>H4sIAAAAAAAA/+1WXW/TMBT9K5YfR5sla5aF8jQBE0jAJIb2wkbk2DetkeME2ykrVf47107STTA+hnhBoi9t7sfxufce3/T9jkpBlzRLID5+nGR8kSwWR3F8lKdJmS3K5EgsGEBKZ1SzGjDSsVJBER5mdMNU5403RXacpXlaCKnB1sy4ojECTCEd1BYDhbStYtvLMf7cO8nL0cnXUgkDmi7fX89oywyCOzB0ufvG9btUFStBYeg7z/UH1N22vdf26m4ueTM4QjF0Gc8o3DjQApBIxZSFGa2ZFsw1ZkuXznRoMMDEuVbbfcRaaoeA1MfeWPkFj81jH1cBVsZh8O0fi7FXg7l6xhy7QGTuOjOG8nUjOdihJwIq1in39K5tCDhvnWz0kBLKHLMb1dX6zdASugeYRoOWziIJaH2dnvlYRnWxbj6/nVieSR1aMjpVw5naPzHnjCw75/nsKCioEaioWdtKvSpa02xkSEYudbRS+BBVqvmMh1q50hHjnniEbWXRGdqfBfMlM9JX8RphMLmfUbu1TxWz9rYWbGLxqfNMhsrGGoqhDT6FG9m6UzxgAyPdfjbdAQHx4x8KKylvhRRkb+/oP+jjqovjhdjt0jiLIc/ZPIeSzdMqy+c55/E8ZWmWn2R4TJ5GBjgm9f0HbE0XrsmUngte8SyO5xWr0nkqqpN5LrIjxICkinmeJew48gnRPhVhsGrtpNs+HGXKRJDWoGwejhDS+v77a/6/LUNbHrjgfq3DacGdSVDC3iPMabtBjfNwUAxC/WbDjU5yOTrHLZf8rS2XYJv85x/adUNx//yqu/NWu3/pTUZPOujU//hpHD08uNIHB6ccO2+J53p4GsgTT550Fuslbg2kEkWwNOVH4C4iFwGA1J11xABOVhNGgh4j4hGH/wK6q0v8kpY0VWXBkXJLHiVEavLcmMaQFyhA5Y+4gKFlgcyGSRXe002YvyWjnkjXIrHWIFWfc0WjK0pYhXduoufT4YbhDYAlsjHErhvjsP2cDDd9CoxwvqsVmIh3BuXgohDo5xfqwlOfeKyxsj2KNx7iYCzbgJj09ifbo+/766+3RwSkpgkAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Get Catalog Variables">330ba3abc31013002841b63b12d3aee8</action_type>
+        <action_type_parent display_value="Get Catalog Variables">22f0b88cc3c632002841b63b12d3aeff</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>330ba3abc31013002841b63b12d3aee8</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Dining Order Processing">dc62c02bc3a322104a82f1d4e40131ec</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-29 17:38:53</sys_created_on>
+        <sys_id>ac62042bc3a322104a82f1d4e401313f</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="DineSmart">c60ad7aec36f22104a82f1d4e4013179</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-29 17:38:53</sys_updated_on>
+        <ui_id>8f799eed-b67e-4c03-bca8-e683e27ef5e5</ui_id>
+        <values>H4sIAAAAAAAA/91Uy27bMBD8FYFnw9DDdVLf2gQBCrRNERe5FAFBUSubKEUpJGXHNfzvXUqUrDzqOEVToIVOWi65M7M7+21LREZmJM3DlCUs5UkURkkYxqeTKJ0maRRnCQNgZEQUKwAzNdzWYCxkVFgoML5isnYH2+0c9EpwCM6YZbJc0Gjsk5vU3Q6TM2EqyTbX/g5G+FLITIMis283I1IxjWUsaDLbPjg6FqdkKUhMnddpISwCDa5aFAc42E3VxnPAehx86KN/6moQL3Xm0IUjAncWVAYIK2fSwIgUTGXMlnpDZlbXGNDAskslN33GUijb0i7YnRE/sGgSjwZ1Z8RwivA6YP0J9co1aDz64EOblJ+j4HMsyW2te1lLbIVppcsgZ7W0Z8NYm3BZWVGq9oplqexul7Iu1OdWLdI/MGhbbRASVE4AR8nzy+fLct2rdSFUo5U/lCVncpAKTPPlhQDpGqvqIsXcEWHWapHW1uHcEpBQYAFasKoSakErXa5E8yhiLMYLiT/jXJZrBGPEQo0Zd4TG2Ac2vsD4eRO+Zlo4dp/wmaZKiV2hmS6rypN2DSO7ETEbcyaZMXvu2AJ6WzvkrRKeM21lc1e4FpV9h4VX4OntRp2v0kPzmkf7mcRWYn8tUO7d88BeJ3H6BvAxnkAyjaNwwk7jPMomMMGHozh6bK4vkqEZWXAuFEoXXDaD+2LDPU+gM9xXz6DzfzOeJkBTBJ3+wRyseZ7zy+0YvZodLcWRuAfQUHyYrjwlalpKTzn1eSH+C+u6Wn/LuMLgeixKnJmGMx32qvEw+hGJYFccxH1wifWorpUVBdDGU1QoWlZmJWD9ev4/OWyfk70Xugnr5soMvD+N8QvT6dPefzuZubFEMk5BqsCxt4/3wW++8rJ9cQThbl907rgeMD4ghl8KRtZmmdb8ewNuuBbm7iR43x35zRAf3gw+csxqiOIwDO9vh1/4/l819n0Lo9Vy3M6o3b4POBfQKEmaK1j0tYx+lGFx6BSXNWYWKIXQWKWH6hZsn+akGYAATde6rdSnVBrv6JVb6BK4bUh2G6WsNfcbB6MPfPIH18bNTzh5PzuQCwAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
+        <action_type_parent display_value="Create Record">02f0b88cc3c632002841b63b12d3aeff</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>2de05916c31332002841b63b12d3aee1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Dining Order Processing">dc62c02bc3a322104a82f1d4e40131ec</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-29 17:38:53</sys_created_on>
+        <sys_id>e862042bc3a322104a82f1d4e401313e</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="DineSmart">c60ad7aec36f22104a82f1d4e4013179</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-14 18:08:02</sys_updated_on>
+        <ui_id>4060e88a-8eba-4f68-8cc0-4a468766de84</ui_id>
+        <values>H4sIAAAAAAAA/9VU32/aMBD+V5CfoyhpaER5m0A8bUUaEy9daznxBSw5Tmo7FIbyv+8cJ4BaqnXSHtY85X5/3935Ho5EcDIlaQzR7V2c5kmcJDdRdDMZx1maZPENTxjAmAREsRLQ07JMAu2EgOyYbJxyT9PbdDwZUy4UmJJp6/6E2tBKc9AGXbkwtWSHdR8x78yj5WDOt0JyDYpMHx4DUjONBSxoMj2+Mn0UrmQZSHT94fC+A98e6qu6r5exo3tv6JiQaRQQ2FtQHBBIwaSBgJRMcWYrfSBTqxtUaGB8qeTh5LEVymJC4nz3RvzCspPI+RWAzHLwtpNI+255dTFnlq0wc24b3bvm20rkYHxPOBSskXZ2qfMOy9qKSvmQjmYfXcmmVPe+JeSUYBgOahqDIKB2PB3ynkax2lYv3weUC6G6lvRGWeVMniRmrRZZYx2eIwEJJSaiJatrtxa1rnaiC0YsZbiRKISFrF6wqBEbFbLcAQ+xrSxcoH7eqddMC8fiG6bB4DYg5mBmkhlz5oJNpM+NQ+KZ9Ryob4MLybWo7RcssIMebhsM74BDdPfuYsXZeZG61TcXb8DYxtX52URRwo/HFegdDmA0Qway2tA41PCMEZYKC+UgAKdFpdv2qdsuaiyzjfEpvEZDDoiTP50DXPzHqrTt24f3v8L8ywPw5zkNB2AhQHJzZXDD64cS+2OB+kG+ugC9cbTujf0ViP/VFYjTqPs+0S3w5D79Kbi4+tePwqBE0G37+Bt6OW2jKgcAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=dc62c02bc3a322104a82f1d4e40131ec"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=dc62c02bc3a322104a82f1d4e40131ec^sys_idNOT IN6862042bc3a322104a82f1d4e401313d"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">415e33d3c3a322104a82f1d4e4013173</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Dining Order Processing">dc62c02bc3a322104a82f1d4e40131ec</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>3</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-29 17:38:53</sys_created_on>
+        <sys_id>6862042bc3a322104a82f1d4e401313d</sys_id>
+        <sys_mod_count>106</sys_mod_count>
+        <sys_scope display_value="DineSmart">c60ad7aec36f22104a82f1d4e4013179</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-14 18:20:54</sys_updated_on>
+        <ui_id>8dcfc600-faf4-4df7-8d62-8ce1f0c861a5</ui_id>
+        <values>H4sIAAAAAAAA/61Ty27bMBD8F55tQRL9vgUJAhhIGyAJcikCYUWubKIUqZKUHVXwv3dpyXaQc2/a4e7szIjsmW1D0wb/Zu+8VzvDNr8+JkyZiNF3zyptj092p8TW+ABG4Gvnt5JtWCrnyLnkggPP8yydwSqvMjnDWZrxbMnZhBmokTpVwNpTeQDdxrrvV9VyvUaU03KxxOlMpHxaClhNcbHimC+xmuM86WzrCuskuuLMcDoRh1S+0dC9/wcqsVdaOhwtN+BIbUDHNv23IxXtZmtZrbN0LXi+4Hma5qtZVi54meWSA8oFEWooUVPrdvT7zX7omlg6FKTkAjyNMy9X9CyTbfJ0wvAzoJFI6yvQHiesBiMhWNexTXAtAQ5BPhvdXTv2ygSiY7H306u/tDFL09hYIRkSOBxey2IMdICrBwjwStQitG5sFXurBPohCokVtDrcf8WGhucmKGuGkQClvkxb3dbm55AEuxJc/h8hrScR2ESjUfroo3rd2+PLReWjMudQxkNtBehrBSE4VbYh6ukZaqyJqKihaZTZFY2zB3UeJi11stNUJPFS09J44RMQUXhCuULySPjDGX4Hp6KLH0RDw6cJ852/1+D9zQuFWPxpo5LB2eihGGKII8KpJtzRggOOck8f8R0M3NdMhfIk4S1i28vLiwcd3aD48G7Q0brfUfwNO/0DRMWv/cMDAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=dc62c02bc3a322104a82f1d4e40131ec"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=dc62c02bc3a322104a82f1d4e40131ec"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_dc62c02bc3a322104a82f1d4e40131ec^sys_idNOT IN1062042bc3a322104a82f1d4e4013130,6862042bc3a322104a82f1d4e4013136"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_dc62c02bc3a322104a82f1d4e40131ec</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-29 17:38:53</sys_created_on>
+        <sys_id>1062042bc3a322104a82f1d4e4013130</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="DineSmart" source="x_656484_dinesmart">c60ad7aec36f22104a82f1d4e4013179</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="DineSmart">c60ad7aec36f22104a82f1d4e4013179</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-29 17:38:53</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>request_item</element>
+        <help/>
+        <hint/>
+        <label>Request Item</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_dc62c02bc3a322104a82f1d4e40131ec</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-29 17:38:53</sys_created_on>
+        <sys_id>6862042bc3a322104a82f1d4e4013136</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="DineSmart" source="x_656484_dinesmart">c60ad7aec36f22104a82f1d4e4013179</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="DineSmart">c60ad7aec36f22104a82f1d4e4013179</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-29 17:38:53</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_dc62c02bc3a322104a82f1d4e40131ec"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_dc62c02bc3a322104a82f1d4e40131ec"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_dc62c02bc3a322104a82f1d4e40131ec"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>39beebd3c32322104a82f1d4e401318e</sys_id>
+        <latest_snapshot>dc62c02bc3a322104a82f1d4e40131ec</latest_snapshot>
+        <compiler_build/>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=39beebd3c32322104a82f1d4e401318e^sys_idNOT IN6062042bc3a322104a82f1d4e4013168"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.RunAlways</binding_strategy>
+        <plan/>
+        <plan_id>39beebd3c32322104a82f1d4e401318e</plan_id>
+        <snapshot>dc62c02bc3a322104a82f1d4e40131ec</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-29 17:38:54</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>6062042bc3a322104a82f1d4e4013168</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-29 17:38:54</sys_updated_on>
+        <trigger display_value="">6862042bc3a322104a82f1d4e4013167</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=39beebd3c32322104a82f1d4e401318e"/>
+</record_update>

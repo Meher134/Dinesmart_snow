@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_list parent="" relationship="" sys_domain="global" table="x_656484_dinesmart_menu_items" version="2" view="Mobile">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>number</element>
+            <list_id display_value="x_656484_dinesmart_menu_items" element="NULL" name="x_656484_dinesmart_menu_items" parent="NULL" relationship="NULL" sys_domain="global" view="9ea9c273782022104f3459503ff42a25">d8c3f357c36322104a82f1d4e40131e8</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-08-29 16:34:59</sys_created_on>
+            <sys_id>54c3f357c36322104a82f1d4e40131e9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-08-29 16:34:59</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>active</element>
+            <list_id display_value="x_656484_dinesmart_menu_items" element="NULL" name="x_656484_dinesmart_menu_items" parent="NULL" relationship="NULL" sys_domain="global" view="9ea9c273782022104f3459503ff42a25">d8c3f357c36322104a82f1d4e40131e8</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>1</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-08-29 16:34:59</sys_created_on>
+            <sys_id>58c3f357c36322104a82f1d4e40131e9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-08-29 16:34:59</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>category</element>
+            <list_id display_value="x_656484_dinesmart_menu_items" element="NULL" name="x_656484_dinesmart_menu_items" parent="NULL" relationship="NULL" sys_domain="global" view="9ea9c273782022104f3459503ff42a25">d8c3f357c36322104a82f1d4e40131e8</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>2</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-08-29 16:34:59</sys_created_on>
+            <sys_id>5cc3f357c36322104a82f1d4e40131e9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-08-29 16:34:59</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>description</element>
+            <list_id display_value="x_656484_dinesmart_menu_items" element="NULL" name="x_656484_dinesmart_menu_items" parent="NULL" relationship="NULL" sys_domain="global" view="9ea9c273782022104f3459503ff42a25">d8c3f357c36322104a82f1d4e40131e8</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>3</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-08-29 16:34:59</sys_created_on>
+            <sys_id>50c3f357c36322104a82f1d4e40131ea</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-08-29 16:34:59</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>image</element>
+            <list_id display_value="x_656484_dinesmart_menu_items" element="NULL" name="x_656484_dinesmart_menu_items" parent="NULL" relationship="NULL" sys_domain="global" view="9ea9c273782022104f3459503ff42a25">d8c3f357c36322104a82f1d4e40131e8</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>4</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-08-29 16:34:59</sys_created_on>
+            <sys_id>54c3f357c36322104a82f1d4e40131ea</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-08-29 16:34:59</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>item_name</element>
+            <list_id display_value="x_656484_dinesmart_menu_items" element="NULL" name="x_656484_dinesmart_menu_items" parent="NULL" relationship="NULL" sys_domain="global" view="9ea9c273782022104f3459503ff42a25">d8c3f357c36322104a82f1d4e40131e8</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>5</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-08-29 16:34:59</sys_created_on>
+            <sys_id>58c3f357c36322104a82f1d4e40131ea</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-08-29 16:34:59</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>prep_time_mins</element>
+            <list_id display_value="x_656484_dinesmart_menu_items" element="NULL" name="x_656484_dinesmart_menu_items" parent="NULL" relationship="NULL" sys_domain="global" view="9ea9c273782022104f3459503ff42a25">d8c3f357c36322104a82f1d4e40131e8</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>6</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-08-29 16:34:59</sys_created_on>
+            <sys_id>5cc3f357c36322104a82f1d4e40131ea</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-08-29 16:34:59</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>price</element>
+            <list_id display_value="x_656484_dinesmart_menu_items" element="NULL" name="x_656484_dinesmart_menu_items" parent="NULL" relationship="NULL" sys_domain="global" view="9ea9c273782022104f3459503ff42a25">d8c3f357c36322104a82f1d4e40131e8</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>7</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-08-29 16:34:59</sys_created_on>
+            <sys_id>50c3f357c36322104a82f1d4e40131eb</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-08-29 16:34:59</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>x_656484_dinesmart_menu_items</name>
+            <parent/>
+            <position/>
+            <relationship/>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-08-29 16:34:59</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>d8c3f357c36322104a82f1d4e40131e8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_656484_dinesmart_menu_items</sys_name>
+            <sys_package display_value="DineSmart" source="x_656484_dinesmart">c60ad7aec36f22104a82f1d4e4013179</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="DineSmart">c60ad7aec36f22104a82f1d4e4013179</sys_scope>
+            <sys_update_name>sys_ui_list_x_656484_dinesmart_menu_items_Mobile</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-08-29 16:34:59</sys_updated_on>
+            <sys_user/>
+            <view display_value="Mobile" name="Mobile">9ea9c273782022104f3459503ff42a25</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+</record_update>

@@ -1,0 +1,1527 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_action_type_definition">
+    <sys_hub_action_type_definition action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <action_status/>
+        <action_template/>
+        <active>true</active>
+        <annotation/>
+        <attributes>{labelCacheCleanUpExecuted=true}</attributes>
+        <authored_on_release_version>26000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <flow_priority/>
+        <ih_action>false</ih_action>
+        <internal_name>calculate_order_details</internal_name>
+        <label_cache>[{"name":"{{action.dining_order}}","label":"action➛Dining Order","type":"action","ref":"","reference_display":"Dining Orders","base_type":"reference","parent_table_name":"","column_name":"","choices":null,"attributes":{}}]</label_cache>
+        <master_snapshot>6acf8189c37322104a82f1d4e4013134</master_snapshot>
+        <master_snapshot_digest/>
+        <name>Calculate Order Details.</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <state>published</state>
+        <sys_class_name>sys_hub_action_type_definition</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-03 14:54:00</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>799c4545c37322104a82f1d4e4013178</sys_id>
+        <sys_mod_count>53</sys_mod_count>
+        <sys_name>Calculate Order Details.</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="DineSmart" source="x_656484_dinesmart">c60ad7aec36f22104a82f1d4e4013179</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="DineSmart">c60ad7aec36f22104a82f1d4e4013179</sys_scope>
+        <sys_update_name>sys_hub_action_type_definition_799c4545c37322104a82f1d4e4013178</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-03 16:22:26</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_definition>
+    <sys_translated_text action="delete_multiple" query="documentkey=799c4545c37322104a82f1d4e4013178"/>
+    <sys_variable_value action="delete_multiple" query="document_key=799c4545c37322104a82f1d4e4013178"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_definition</document>
+        <document_key>799c4545c37322104a82f1d4e4013178</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-03 15:02:59</sys_created_on>
+        <sys_id>1dae0d09c37322104a82f1d4e4013140</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-03 15:02:59</sys_updated_on>
+        <value>0</value>
+        <variable display_value="Don't Treat as Error">51ae0d09c37322104a82f1d4e4013137</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_definition</document>
+        <document_key>799c4545c37322104a82f1d4e4013178</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-03 15:07:51</sys_created_on>
+        <sys_id>78cf4189c37322104a82f1d4e4013171</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-03 15:56:12</sys_updated_on>
+        <value> </value>
+        <variable display_value="Order Summary">226fc949c37322104a82f1d4e401311e</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_definition</document>
+        <document_key>799c4545c37322104a82f1d4e4013178</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-03 15:54:35</sys_created_on>
+        <sys_id>d97a5109c3b322104a82f1d4e40131b8</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-03 15:55:57</sys_updated_on>
+        <value>0</value>
+        <variable display_value="Total Price">5954d9cdc37322104a82f1d4e4013179</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_definition</document>
+        <document_key>799c4545c37322104a82f1d4e4013178</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-03 15:02:59</sys_created_on>
+        <sys_id>edae0d09c37322104a82f1d4e4013140</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-03 15:02:59</sys_updated_on>
+        <value>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"4adfb7bc-9d67-498d-88d0-8d6c3d584fed\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"serializationFormat":"JSON"}</value>
+        <variable display_value="Action Status">55ae0d09c37322104a82f1d4e4013132</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_action_output_799c4545c37322104a82f1d4e4013178^id=799c4545c37322104a82f1d4e4013178"/>
+    <sys_hub_step_instance action="delete_multiple" query="action=799c4545c37322104a82f1d4e4013178^sys_idNOT IN59ae0d09c37322104a82f1d4e4013122"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Calculate Order Details.">799c4545c37322104a82f1d4e4013178</action>
+        <cid>6f9d9b1b-9f26-4b9e-b19c-aa12e60ed890</cid>
+        <error_handling_type>1</error_handling_type>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>Script step</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="Script">106afb6647032200b4fad7527c9a71e7</step_type>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-03 15:02:58</sys_created_on>
+        <sys_id>59ae0d09c37322104a82f1d4e4013122</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_scope display_value="DineSmart">c60ad7aec36f22104a82f1d4e4013179</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-03 16:22:20</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=59ae0d09c37322104a82f1d4e4013122"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>59ae0d09c37322104a82f1d4e4013122</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-03 15:02:58</sys_created_on>
+        <sys_id>15ae0d09c37322104a82f1d4e4013130</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-03 16:22:20</sys_updated_on>
+        <value>(function(inputs, outputs) {&#13;
+  // Add a small pause to ensure all records are saved&#13;
+  gs.sleep(500); // Pauses for half a second&#13;
+&#13;
+  // Get the dining order record directly from the input&#13;
+  var diningOrderGR = new GlideRecord('x_656484_dinesmart_dining_orders');&#13;
+  if (!diningOrderGR.get(inputs.dining_order)) {&#13;
+    return;&#13;
+  }&#13;
+&#13;
+  var total = 0;&#13;
+  var summary = [];&#13;
+&#13;
+  // Find all related order items&#13;
+  var orderItemsGR = new GlideRecord('x_656484_dinesmart_order_items');&#13;
+  orderItemsGR.addQuery('order', inputs.dining_order);&#13;
+  orderItemsGR.query();&#13;
+&#13;
+  // Loop through them&#13;
+  while (orderItemsGR.next()) {&#13;
+    var price = parseFloat(orderItemsGR.price.toString());&#13;
+    var quantity = parseInt(orderItemsGR.quantity.toString());&#13;
+    total += price * quantity;&#13;
+    summary.push(orderItemsGR.quantity + 'x ' + orderItemsGR.menu_item.getDisplayValue());&#13;
+  }&#13;
+&#13;
+  // Set the Action's Output Variables&#13;
+  outputs.total_price = total;&#13;
+  outputs.order_summary = summary.join(', ');&#13;
+&#13;
+})(inputs, outputs);</value>
+        <variable display_value="Script">71aa7f6647032200b4fad7527c9a719b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>59ae0d09c37322104a82f1d4e4013122</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-03 15:02:58</sys_created_on>
+        <sys_id>99ae0d09c37322104a82f1d4e401312f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-03 15:02:58</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="MID Application">f5e56d79b3101300176b051a16a8dce4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7^id=59ae0d09c37322104a82f1d4e4013122"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=59ae0d09c37322104a82f1d4e4013122"/>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=59ae0d09c37322104a82f1d4e4013122"/>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=59ae0d09c37322104a82f1d4e4013122"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=59ae0d09c37322104a82f1d4e4013122"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_59ae0d09c37322104a82f1d4e4013122"/>
+    <sys_hub_action_input action="delete_multiple" query="model=799c4545c37322104a82f1d4e4013178^sys_idNOT IN5dae0945c37322104a82f1d4e40131b1"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=7eb9a86b-a1ec-486c-ab3d-d7d2081d8f08</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>x_656484_dinesmart_dining_orders</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>dining_order</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Dining Order</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Calculate Order Details.">799c4545c37322104a82f1d4e4013178</model>
+        <model_id>799c4545c37322104a82f1d4e4013178</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_799c4545c37322104a82f1d4e4013178</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="x_656484_dinesmart_dining_orders">x_656484_dinesmart_dining_orders</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-03 15:02:58</sys_created_on>
+        <sys_id>5dae0945c37322104a82f1d4e40131b1</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="DineSmart">c60ad7aec36f22104a82f1d4e4013179</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-03 15:02:58</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=5dae0945c37322104a82f1d4e40131b1"/>
+    <sys_hub_action_output action="delete_multiple" query="model=799c4545c37322104a82f1d4e4013178^sys_idNOT IN226fc949c37322104a82f1d4e401311e,51ae0d09c37322104a82f1d4e4013137,55ae0d09c37322104a82f1d4e4013132,5954d9cdc37322104a82f1d4e4013179"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=string,uiTypeLabel=String,uiUniqueId=1930a374-a22a-4c51-9432-f46c79370d51</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>order_summary</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Order Summary</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Calculate Order Details.">799c4545c37322104a82f1d4e4013178</model>
+        <model_id>799c4545c37322104a82f1d4e4013178</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_799c4545c37322104a82f1d4e4013178</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-03 15:06:20</sys_created_on>
+        <sys_id>226fc949c37322104a82f1d4e401311e</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="DineSmart">c60ad7aec36f22104a82f1d4e4013179</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-03 15:07:51</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=226fc949c37322104a82f1d4e401311e"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=226fc949c37322104a82f1d4e401311e"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=75af7e93-a6b1-4f85-a153-9363c7631f4c,visible_in_ui=false</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>true</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__dont_treat_as_error__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Don't Treat as Error</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Calculate Order Details.">799c4545c37322104a82f1d4e4013178</model>
+        <model_id>799c4545c37322104a82f1d4e4013178</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_799c4545c37322104a82f1d4e4013178</name>
+        <next_element/>
+        <order>4</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-03 15:02:59</sys_created_on>
+        <sys_id>51ae0d09c37322104a82f1d4e4013137</sys_id>
+        <sys_mod_count>45</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="DineSmart">c60ad7aec36f22104a82f1d4e4013179</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-03 16:22:25</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=51ae0d09c37322104a82f1d4e4013137"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=51ae0d09c37322104a82f1d4e4013137"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,co_type_name=FDACTIONSTATUS,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=99cb7296-1b0d-47f1-b265-4ce17b8dbb55</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__action_status__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Action Status</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="Calculate Order Details.">799c4545c37322104a82f1d4e4013178</model>
+        <model_id>799c4545c37322104a82f1d4e4013178</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_799c4545c37322104a82f1d4e4013178</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-03 15:02:58</sys_created_on>
+        <sys_id>55ae0d09c37322104a82f1d4e4013132</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="DineSmart">c60ad7aec36f22104a82f1d4e4013179</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-03 15:06:20</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=55ae0d09c37322104a82f1d4e4013132"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=55ae0d09c37322104a82f1d4e4013132"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=currency,uiTypeLabel=Currency,uiUniqueId=fa85d2fc-9c9c-4f01-adaf-9a80d25a7cce</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>total_price</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="Currency">currency</internal_type>
+        <label>Total Price</label>
+        <mandatory>false</mandatory>
+        <max_length>20</max_length>
+        <model display_value="Calculate Order Details.">799c4545c37322104a82f1d4e4013178</model>
+        <model_id>799c4545c37322104a82f1d4e4013178</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_799c4545c37322104a82f1d4e4013178</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-03 15:27:50</sys_created_on>
+        <sys_id>5954d9cdc37322104a82f1d4e4013179</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="DineSmart">c60ad7aec36f22104a82f1d4e4013179</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-03 15:27:50</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=5954d9cdc37322104a82f1d4e4013179"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=5954d9cdc37322104a82f1d4e4013179"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=799c4545c37322104a82f1d4e4013178"/>
+    <sys_hub_action_status_metadata action="delete_multiple" query="action_type_id=799c4545c37322104a82f1d4e4013178^sys_idNOT IN25ae0d09c37322104a82f1d4e4013142"/>
+    <sys_hub_action_status_metadata action="INSERT_OR_UPDATE">
+        <action_type_id display_value="Calculate Order Details.">799c4545c37322104a82f1d4e4013178</action_type_id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-03 15:02:59</sys_created_on>
+        <sys_id>25ae0d09c37322104a82f1d4e4013142</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-03 15:02:59</sys_updated_on>
+    </sys_hub_action_status_metadata>
+    <sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=25ae0d09c37322104a82f1d4e4013142"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_799c4545c37322104a82f1d4e4013178^sys_idNOT IN95ae0d09c37322104a82f1d4e4013111"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>dining_order</element>
+        <help/>
+        <hint/>
+        <label>Dining Order</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_799c4545c37322104a82f1d4e4013178</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-03 15:02:58</sys_created_on>
+        <sys_id>95ae0d09c37322104a82f1d4e4013111</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="DineSmart" source="x_656484_dinesmart">c60ad7aec36f22104a82f1d4e4013179</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="DineSmart">c60ad7aec36f22104a82f1d4e4013179</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-03 15:02:58</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_input_799c4545c37322104a82f1d4e4013178"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_799c4545c37322104a82f1d4e4013178^sys_idNOT IN2154d9cdc37322104a82f1d4e401317d,266fc949c37322104a82f1d4e401312d,91ae0d09c37322104a82f1d4e401313c,95ae0d09c37322104a82f1d4e4013136"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>total_price</element>
+        <help/>
+        <hint/>
+        <label>Total Price</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_799c4545c37322104a82f1d4e4013178</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-03 15:27:50</sys_created_on>
+        <sys_id>2154d9cdc37322104a82f1d4e401317d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="DineSmart" source="x_656484_dinesmart">c60ad7aec36f22104a82f1d4e4013179</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="DineSmart">c60ad7aec36f22104a82f1d4e4013179</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-03 15:27:50</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>order_summary</element>
+        <help/>
+        <hint/>
+        <label>Order Summary</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_799c4545c37322104a82f1d4e4013178</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-03 15:06:20</sys_created_on>
+        <sys_id>266fc949c37322104a82f1d4e401312d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="DineSmart" source="x_656484_dinesmart">c60ad7aec36f22104a82f1d4e4013179</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="DineSmart">c60ad7aec36f22104a82f1d4e4013179</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-03 15:06:20</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>__dont_treat_as_error__</element>
+        <help/>
+        <hint/>
+        <label>Don't Treat as Error</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_799c4545c37322104a82f1d4e4013178</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-03 15:02:59</sys_created_on>
+        <sys_id>91ae0d09c37322104a82f1d4e401313c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="DineSmart" source="x_656484_dinesmart">c60ad7aec36f22104a82f1d4e4013179</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="DineSmart">c60ad7aec36f22104a82f1d4e4013179</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-03 15:02:59</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>__action_status__</element>
+        <help/>
+        <hint/>
+        <label>Action Status</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_799c4545c37322104a82f1d4e4013178</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-03 15:02:59</sys_created_on>
+        <sys_id>95ae0d09c37322104a82f1d4e4013136</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="DineSmart" source="x_656484_dinesmart">c60ad7aec36f22104a82f1d4e4013179</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="DineSmart">c60ad7aec36f22104a82f1d4e4013179</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-03 15:02:59</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_output_799c4545c37322104a82f1d4e4013178"/>
+    <sys_hub_action_plan action="delete_multiple" query="action_id=799c4545c37322104a82f1d4e4013178^sys_idNOT IN32cf8189c37322104a82f1d4e4013185"/>
+    <sys_hub_action_plan action="INSERT_OR_UPDATE">
+        <action_id display_value="Calculate Order Details.">799c4545c37322104a82f1d4e4013178</action_id>
+        <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"32cf8189c37322104a82f1d4e4013185","name":"plan","plan_signature":null}}</plan>
+        <snapshot>59d06dcdc3b322104a82f1d4e401318e</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-03 15:07:59</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>32cf8189c37322104a82f1d4e4013185</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-03 16:22:27</sys_updated_on>
+    </sys_hub_action_plan>
+    <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <action_status/>
+        <action_template/>
+        <annotation/>
+        <attributes>{labelCacheCleanUpExecuted=true}</attributes>
+        <authored_on_release_version>26000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <flow_priority/>
+        <internal_name>calculate_order_details</internal_name>
+        <label_cache>[{"name":"{{action.dining_order}}","label":"action➛Dining Order","type":"action","ref":"","reference_display":"Dining Orders","base_type":"reference","parent_table_name":"","column_name":"","choices":null,"attributes":{}}]</label_cache>
+        <master>true</master>
+        <name>Calculate Order Details.</name>
+        <natlang/>
+        <outputs/>
+        <parent_action display_value="Calculate Order Details.">799c4545c37322104a82f1d4e4013178</parent_action>
+        <sys_class_name>sys_hub_action_type_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-03 15:07:58</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>6acf8189c37322104a82f1d4e4013134</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="DineSmart">c60ad7aec36f22104a82f1d4e4013179</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-03 15:07:58</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=6acf8189c37322104a82f1d4e4013134"/>
+    <sys_variable_value action="delete_multiple" query="document_key=6acf8189c37322104a82f1d4e4013134"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_snapshot</document>
+        <document_key>6acf8189c37322104a82f1d4e4013134</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-03 15:07:59</sys_created_on>
+        <sys_id>3acf8189c37322104a82f1d4e4013161</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-03 15:07:59</sys_updated_on>
+        <value>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"4adfb7bc-9d67-498d-88d0-8d6c3d584fed\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"serializationFormat":"JSON"}</value>
+        <variable display_value="Action Status">a2cf8189c37322104a82f1d4e4013150</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_snapshot</document>
+        <document_key>6acf8189c37322104a82f1d4e4013134</document_key>
+        <order>4</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-03 15:07:59</sys_created_on>
+        <sys_id>76cf8189c37322104a82f1d4e4013161</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-03 15:07:59</sys_updated_on>
+        <value>0</value>
+        <variable display_value="Don't Treat as Error">66cf8189c37322104a82f1d4e4013157</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_snapshot</document>
+        <document_key>6acf8189c37322104a82f1d4e4013134</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-03 15:54:41</sys_created_on>
+        <sys_id>7a7a9109c3b322104a82f1d4e40131d7</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-03 15:56:13</sys_updated_on>
+        <value>0</value>
+        <variable display_value="Total Price">ae541dcdc37322104a82f1d4e4013160</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_snapshot</document>
+        <document_key>6acf8189c37322104a82f1d4e4013134</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-03 15:07:59</sys_created_on>
+        <sys_id>facf8189c37322104a82f1d4e4013161</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-03 15:56:13</sys_updated_on>
+        <value> </value>
+        <variable display_value="Order Summary">2ecf8189c37322104a82f1d4e4013153</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_action_output_6acf8189c37322104a82f1d4e4013134^id=6acf8189c37322104a82f1d4e4013134"/>
+    <sys_hub_step_instance action="delete_multiple" query="action=6acf8189c37322104a82f1d4e4013134^sys_idNOT INaacf8189c37322104a82f1d4e4013140"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Calculate Order Details.">6acf8189c37322104a82f1d4e4013134</action>
+        <cid>6f9d9b1b-9f26-4b9e-b19c-aa12e60ed890</cid>
+        <error_handling_type>1</error_handling_type>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>Script step</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="Script">106afb6647032200b4fad7527c9a71e7</step_type>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-03 15:07:58</sys_created_on>
+        <sys_id>aacf8189c37322104a82f1d4e4013140</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="DineSmart">c60ad7aec36f22104a82f1d4e4013179</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-03 16:22:26</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=aacf8189c37322104a82f1d4e4013140"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>aacf8189c37322104a82f1d4e4013140</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-03 15:07:58</sys_created_on>
+        <sys_id>26cf8189c37322104a82f1d4e401314a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-03 15:07:58</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="MID Application">f5e56d79b3101300176b051a16a8dce4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>aacf8189c37322104a82f1d4e4013140</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-03 15:07:58</sys_created_on>
+        <sys_id>e6cf8189c37322104a82f1d4e401314a</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-03 16:22:26</sys_updated_on>
+        <value>(function(inputs, outputs) {&#13;
+  // Add a small pause to ensure all records are saved&#13;
+  gs.sleep(500); // Pauses for half a second&#13;
+&#13;
+  // Get the dining order record directly from the input&#13;
+  var diningOrderGR = new GlideRecord('x_656484_dinesmart_dining_orders');&#13;
+  if (!diningOrderGR.get(inputs.dining_order)) {&#13;
+    return;&#13;
+  }&#13;
+&#13;
+  var total = 0;&#13;
+  var summary = [];&#13;
+&#13;
+  // Find all related order items&#13;
+  var orderItemsGR = new GlideRecord('x_656484_dinesmart_order_items');&#13;
+  orderItemsGR.addQuery('order', inputs.dining_order);&#13;
+  orderItemsGR.query();&#13;
+&#13;
+  // Loop through them&#13;
+  while (orderItemsGR.next()) {&#13;
+    var price = parseFloat(orderItemsGR.price.toString());&#13;
+    var quantity = parseInt(orderItemsGR.quantity.toString());&#13;
+    total += price * quantity;&#13;
+    summary.push(orderItemsGR.quantity + 'x ' + orderItemsGR.menu_item.getDisplayValue());&#13;
+  }&#13;
+&#13;
+  // Set the Action's Output Variables&#13;
+  outputs.total_price = total;&#13;
+  outputs.order_summary = summary.join(', ');&#13;
+&#13;
+})(inputs, outputs);</value>
+        <variable display_value="Script">71aa7f6647032200b4fad7527c9a719b</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7^id=aacf8189c37322104a82f1d4e4013140"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=aacf8189c37322104a82f1d4e4013140"/>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=aacf8189c37322104a82f1d4e4013140"/>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=aacf8189c37322104a82f1d4e4013140"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=aacf8189c37322104a82f1d4e4013140"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_aacf8189c37322104a82f1d4e4013140"/>
+    <sys_hub_action_input action="delete_multiple" query="model=6acf8189c37322104a82f1d4e4013134^sys_idNOT IN6ecf8189c37322104a82f1d4e4013137"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=7eb9a86b-a1ec-486c-ab3d-d7d2081d8f08</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>x_656484_dinesmart_dining_orders</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>dining_order</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Dining Order</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Calculate Order Details.">6acf8189c37322104a82f1d4e4013134</model>
+        <model_id>6acf8189c37322104a82f1d4e4013134</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_input_6acf8189c37322104a82f1d4e4013134</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="x_656484_dinesmart_dining_orders">x_656484_dinesmart_dining_orders</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-03 15:07:58</sys_created_on>
+        <sys_id>6ecf8189c37322104a82f1d4e4013137</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="DineSmart">c60ad7aec36f22104a82f1d4e4013179</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-03 15:07:58</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=6ecf8189c37322104a82f1d4e4013137"/>
+    <sys_hub_action_output action="delete_multiple" query="model=6acf8189c37322104a82f1d4e4013134^sys_idNOT IN2ecf8189c37322104a82f1d4e4013153,66cf8189c37322104a82f1d4e4013157,a2cf8189c37322104a82f1d4e4013150,ae541dcdc37322104a82f1d4e4013160"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=string,uiTypeLabel=String,uiUniqueId=1930a374-a22a-4c51-9432-f46c79370d51</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>order_summary</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Order Summary</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Calculate Order Details.">6acf8189c37322104a82f1d4e4013134</model>
+        <model_id>6acf8189c37322104a82f1d4e4013134</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_6acf8189c37322104a82f1d4e4013134</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-03 15:07:59</sys_created_on>
+        <sys_id>2ecf8189c37322104a82f1d4e4013153</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="DineSmart">c60ad7aec36f22104a82f1d4e4013179</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-03 15:07:59</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=2ecf8189c37322104a82f1d4e4013153"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=2ecf8189c37322104a82f1d4e4013153"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=75af7e93-a6b1-4f85-a153-9363c7631f4c,visible_in_ui=false</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>true</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__dont_treat_as_error__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Don't Treat as Error</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Calculate Order Details.">6acf8189c37322104a82f1d4e4013134</model>
+        <model_id>6acf8189c37322104a82f1d4e4013134</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_6acf8189c37322104a82f1d4e4013134</name>
+        <next_element/>
+        <order>4</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-03 15:07:59</sys_created_on>
+        <sys_id>66cf8189c37322104a82f1d4e4013157</sys_id>
+        <sys_mod_count>19</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="DineSmart">c60ad7aec36f22104a82f1d4e4013179</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-03 16:22:26</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=66cf8189c37322104a82f1d4e4013157"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=66cf8189c37322104a82f1d4e4013157"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,co_type_name=FDACTIONSTATUS,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=99cb7296-1b0d-47f1-b265-4ce17b8dbb55</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__action_status__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Action Status</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="Calculate Order Details.">6acf8189c37322104a82f1d4e4013134</model>
+        <model_id>6acf8189c37322104a82f1d4e4013134</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_6acf8189c37322104a82f1d4e4013134</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-03 15:07:59</sys_created_on>
+        <sys_id>a2cf8189c37322104a82f1d4e4013150</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="DineSmart">c60ad7aec36f22104a82f1d4e4013179</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-03 15:07:59</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=a2cf8189c37322104a82f1d4e4013150"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=a2cf8189c37322104a82f1d4e4013150"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=currency,uiTypeLabel=Currency,uiUniqueId=fa85d2fc-9c9c-4f01-adaf-9a80d25a7cce</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>total_price</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="Currency">currency</internal_type>
+        <label>Total Price</label>
+        <mandatory>false</mandatory>
+        <max_length>20</max_length>
+        <model display_value="Calculate Order Details.">6acf8189c37322104a82f1d4e4013134</model>
+        <model_id>6acf8189c37322104a82f1d4e4013134</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_6acf8189c37322104a82f1d4e4013134</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-03 15:27:55</sys_created_on>
+        <sys_id>ae541dcdc37322104a82f1d4e4013160</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="DineSmart">c60ad7aec36f22104a82f1d4e4013179</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-03 15:27:55</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=ae541dcdc37322104a82f1d4e4013160"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=ae541dcdc37322104a82f1d4e4013160"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=6acf8189c37322104a82f1d4e4013134"/>
+    <sys_hub_action_status_metadata action="delete_multiple" query="action_type_id=6acf8189c37322104a82f1d4e4013134^sys_idNOT INb6cf8189c37322104a82f1d4e4013163"/>
+    <sys_hub_action_status_metadata action="INSERT_OR_UPDATE">
+        <action_type_id display_value="Calculate Order Details.">6acf8189c37322104a82f1d4e4013134</action_type_id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-03 15:07:59</sys_created_on>
+        <sys_id>b6cf8189c37322104a82f1d4e4013163</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-03 15:07:59</sys_updated_on>
+    </sys_hub_action_status_metadata>
+    <sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=b6cf8189c37322104a82f1d4e4013163"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_6acf8189c37322104a82f1d4e4013134^sys_idNOT INeecf8189c37322104a82f1d4e401313b"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>dining_order</element>
+        <help/>
+        <hint/>
+        <label>Dining Order</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_6acf8189c37322104a82f1d4e4013134</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-03 15:07:58</sys_created_on>
+        <sys_id>eecf8189c37322104a82f1d4e401313b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="DineSmart" source="x_656484_dinesmart">c60ad7aec36f22104a82f1d4e4013179</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="DineSmart">c60ad7aec36f22104a82f1d4e4013179</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-03 15:07:58</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_input_6acf8189c37322104a82f1d4e4013134"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_6acf8189c37322104a82f1d4e4013134^sys_idNOT IN62cf8189c37322104a82f1d4e4013153,66541dcdc37322104a82f1d4e4013164,6ecf8189c37322104a82f1d4e401315b,aacf8189c37322104a82f1d4e4013156"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>__action_status__</element>
+        <help/>
+        <hint/>
+        <label>Action Status</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_6acf8189c37322104a82f1d4e4013134</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-03 15:07:59</sys_created_on>
+        <sys_id>62cf8189c37322104a82f1d4e4013153</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="DineSmart" source="x_656484_dinesmart">c60ad7aec36f22104a82f1d4e4013179</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="DineSmart">c60ad7aec36f22104a82f1d4e4013179</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-03 15:07:59</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>total_price</element>
+        <help/>
+        <hint/>
+        <label>Total Price</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_6acf8189c37322104a82f1d4e4013134</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-03 15:27:55</sys_created_on>
+        <sys_id>66541dcdc37322104a82f1d4e4013164</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="DineSmart" source="x_656484_dinesmart">c60ad7aec36f22104a82f1d4e4013179</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="DineSmart">c60ad7aec36f22104a82f1d4e4013179</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-03 15:27:55</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>__dont_treat_as_error__</element>
+        <help/>
+        <hint/>
+        <label>Don't Treat as Error</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_6acf8189c37322104a82f1d4e4013134</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-03 15:07:59</sys_created_on>
+        <sys_id>6ecf8189c37322104a82f1d4e401315b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="DineSmart" source="x_656484_dinesmart">c60ad7aec36f22104a82f1d4e4013179</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="DineSmart">c60ad7aec36f22104a82f1d4e4013179</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-03 15:07:59</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>order_summary</element>
+        <help/>
+        <hint/>
+        <label>Order Summary</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_6acf8189c37322104a82f1d4e4013134</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-03 15:07:59</sys_created_on>
+        <sys_id>aacf8189c37322104a82f1d4e4013156</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="DineSmart" source="x_656484_dinesmart">c60ad7aec36f22104a82f1d4e4013179</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="DineSmart">c60ad7aec36f22104a82f1d4e4013179</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-03 15:07:59</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_output_6acf8189c37322104a82f1d4e4013134"/>
+    <sys_hub_action_type_definition action="UPDATE">
+        <sys_id>799c4545c37322104a82f1d4e4013178</sys_id>
+        <latest_snapshot>6acf8189c37322104a82f1d4e4013134</latest_snapshot>
+        <compiler_build>glide-xanadu-07-02-2024__patch9a-06-23-2025_07-23-2025_2226.zip</compiler_build>
+    </sys_hub_action_type_definition>
+</record_update>

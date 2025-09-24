@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="DELETE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>true</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>false</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_656484_dinesmart_order_items</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Calculate Dining Order Total and Summary</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script/>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-03 14:37:57</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>a5984141c37322104a82f1d4e4013137</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>Calculate Dining Order Total and Summary</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="DineSmart" source="x_656484_dinesmart">c60ad7aec36f22104a82f1d4e4013179</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="DineSmart">c60ad7aec36f22104a82f1d4e4013179</sys_scope>
+        <sys_update_name>sys_script_a5984141c37322104a82f1d4e4013137</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-10 15:48:03</sys_updated_on>
+        <template/>
+        <when>after</when>
+    </sys_script>
+    <sys_translated_text action="DELETE" query="documentkey=a5984141c37322104a82f1d4e4013137"/>
+    <sys_es_latest_script action="DELETE">
+        <id>a5984141c37322104a82f1d4e4013137</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-03 14:37:55</sys_created_on>
+        <sys_id>5ee80101c37322104a82f1d4e40131e7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-03 14:37:55</sys_updated_on>
+        <table>sys_script</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="DineSmart">c60ad7aec36f22104a82f1d4e4013179</application>
+        <file_path/>
+        <instance_id>6b1ecde693ca5e58401cddd548373cf5</instance_id>
+        <instance_name>dev292170</instance_name>
+        <name>sys_script_a5984141c37322104a82f1d4e4013137</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script"><sys_script action="INSERT_OR_UPDATE"><abort_action>false</abort_action><access>package_private</access><action_delete>true</action_delete><action_insert>true</action_insert><action_query>false</action_query><action_update>true</action_update><active>false</active><add_message>false</add_message><advanced>true</advanced><change_fields>false</change_fields><client_callable>false</client_callable><collection>x_656484_dinesmart_order_items</collection><condition/><description/><execute_function>false</execute_function><filter_condition/><is_rest>false</is_rest><message/><name>Calculate Dining Order Total and Summary</name><order>100</order><priority>100</priority><rest_method/><rest_method_text/><rest_service/><rest_service_text/><rest_variables/><role_conditions/><script/><sys_class_name>sys_script</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-09-03 14:37:57</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>a5984141c37322104a82f1d4e4013137</sys_id><sys_mod_count>7</sys_mod_count><sys_name>Calculate Dining Order Total and Summary</sys_name><sys_overrides/><sys_package display_value="DineSmart" source="x_656484_dinesmart">c60ad7aec36f22104a82f1d4e4013179</sys_package><sys_policy/><sys_scope display_value="DineSmart">c60ad7aec36f22104a82f1d4e4013179</sys_scope><sys_update_name>sys_script_a5984141c37322104a82f1d4e4013137</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-09-10 15:48:03</sys_updated_on><template/><when>after</when></sys_script><sys_translated_text action="delete_multiple" query="documentkey=a5984141c37322104a82f1d4e4013137"/><sys_es_latest_script action="INSERT_OR_UPDATE"><id>a5984141c37322104a82f1d4e4013137</id><sys_created_by>admin</sys_created_by><sys_created_on>2025-09-03 14:37:55</sys_created_on><sys_id>5ee80101c37322104a82f1d4e40131e7</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-09-03 14:37:55</sys_updated_on><table>sys_script</table><use_es_latest>true</use_es_latest></sys_es_latest_script></record_update>]]></payload>
+        <payload_hash>-1251210413</payload_hash>
+        <record_name>Calculate Dining Order Total and Summary</record_name>
+        <reverted_from/>
+        <source>460ad7aec36f22104a82f1d4e401317e</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-10 15:48:03</sys_created_on>
+        <sys_id>f11c999fc3f322104a82f1d4e401314b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>199345005980000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-10 15:48:03</sys_updated_on>
+        <type>Business Rule</type>
+        <update_guid>f51c999fe4f322109ed270f3f078014a</update_guid>
+        <update_guid_history>f51c999fe4f322109ed270f3f078014a:-1251210413,90efbc1fcd7322101a54fb4339116736:-1007924,8d2f7cdbca732210a41015f1f066143a:-1251210413,231a7857bc732210dee1b892c51ba628:-1007924,1c87f493887322100dcf086581f70ea3:-842351954,6e273093b97322101f53d898a39fef1a:752458924,7263b0db133322104bb34228b10ee03d:-1966395594,bae80d0d8033221070a317c6bb354522:-743536352</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-14 14:49:31</sys_created_on>
+        <sys_db_object display_value="" name="sys_script">sys_script</sys_db_object>
+        <sys_id>22542747305f45208109222cadbc2c40</sys_id>
+        <sys_metadata>a5984141c37322104a82f1d4e4013137</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Calculate Dining Order Total and Summary</sys_name>
+        <sys_package display_value="DineSmart" source="x_656484_dinesmart">c60ad7aec36f22104a82f1d4e4013179</sys_package>
+        <sys_parent display_value="Order Items">e0916baac3af22104a82f1d4e4013123</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="DineSmart">c60ad7aec36f22104a82f1d4e4013179</sys_scope>
+        <sys_scope_delete display_value="">6640b295785342e59fd6fde77408fb71</sys_scope_delete>
+        <sys_update_name>sys_script_a5984141c37322104a82f1d4e4013137</sys_update_name>
+        <sys_update_version display_value="sys_script_a5984141c37322104a82f1d4e4013137">f11c999fc3f322104a82f1d4e401314b</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-14 14:49:31</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

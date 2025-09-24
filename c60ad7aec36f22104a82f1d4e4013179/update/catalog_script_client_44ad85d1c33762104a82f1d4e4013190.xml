@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="catalog_script_client">
+    <catalog_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_catalog>true</applies_catalog>
+        <applies_extended>false</applies_extended>
+        <applies_req_item>true</applies_req_item>
+        <applies_sc_task>false</applies_sc_task>
+        <applies_target_record>false</applies_target_record>
+        <applies_to>set</applies_to>
+        <cat_item/>
+        <cat_variable>IO:84036cb6c3e362104a82f1d4e4013161</cat_variable>
+        <condition/>
+        <description/>
+        <field/>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Update Price on Item Change</name>
+        <order/>
+        <published_ref/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading) {
+    if (isLoading || newValue === '') {
+        g_form.setValue('price', '');
+        g_form.setValue('total', '');
+        return;
+    }
+
+    // Use the correct API Name of your Script Include
+    var ga = new GlideAjax('x_656484_dinesmart.DineSmartOrderUtils');
+    ga.addParam('sysparm_name', 'getMenuItemPrice');
+    ga.addParam('sysparm_item_id', newValue);
+    ga.getXML(updatePrice);
+
+    function updatePrice(response) {
+        var answer = response.responseXML.documentElement.getAttribute("answer");
+        var price = parseFloat(answer) || 0;
+
+        // Make sure your variable names are 'price', 'quantity', and 'total'
+        g_form.setValue('price', price.toFixed(2));
+        g_form.setReadOnly('price', true);
+
+        var quantity = parseInt(g_form.getValue('quantity'), 10) || 1;
+        var total = price * quantity;
+        g_form.setValue('total', total.toFixed(2));
+        g_form.setReadOnly('total', true);
+		g_form.setValue('final_order_total', total.toFixed(2));
+    }
+}]]></script>
+        <sys_class_name>catalog_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-04 09:38:02</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>44ad85d1c33762104a82f1d4e4013190</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_name>Update Price on Item Change</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="DineSmart" source="x_656484_dinesmart">c60ad7aec36f22104a82f1d4e4013179</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="DineSmart">c60ad7aec36f22104a82f1d4e4013179</sys_scope>
+        <sys_update_name>catalog_script_client_44ad85d1c33762104a82f1d4e4013190</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-14 17:45:34</sys_updated_on>
+        <table/>
+        <type>onChange</type>
+        <ui_type>10</ui_type>
+        <va_supported>true</va_supported>
+        <variable_set display_value="Your Order Items">626260b6c3e362104a82f1d4e4013194</variable_set>
+        <view/>
+    </catalog_script_client>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>44ad85d1c33762104a82f1d4e4013190</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-04 09:38:01</sys_created_on>
+        <sys_id>83dd45ddc3f362104a82f1d4e40131e5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-04 09:38:01</sys_updated_on>
+        <table>catalog_script_client</table>
+        <use_es_latest>false</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

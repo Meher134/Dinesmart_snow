@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="edcc1fe2c3af22104a82f1d4e401310e" label="Menu Items" max_length="40" name="x_656484_dinesmart_menu_items" type="collection">
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Description" max_length="250" name="description" type="string"/>
+        <element attributes="omit_sys_original=true" label="Price" mandatory="true" max_length="20" name="price" type="currency"/>
+        <element attributes="edge_encryption_enabled=true" display="true" label="Item Name" mandatory="true" max_length="100" name="item_name" type="string"/>
+        <element label="Image " max_length="40" name="image" type="user_image"/>
+        <element label="Prep Time (mins)" max_length="40" name="prep_time_mins" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Category" mandatory="true" max_length="40" name="category" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Lunch" value="lunch"/>
+                <element inactive_on_update="false" label="Beverages" value="beverages"/>
+                <element inactive_on_update="false" label="Dinner" value="dinner"/>
+                <element inactive_on_update="false" label="Snacks" value="snacks"/>
+                <element inactive_on_update="false" label="Breakfast" value="breakfast"/>
+            </choice>
+        </element>
+        <element label="Active" max_length="40" name="active" type="boolean"/>
+    </element>
+</database>

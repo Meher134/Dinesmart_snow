@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_656484_dinesmart.DineSmartOrderUtils</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>DineSmartOrderUtils</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var DineSmartOrderUtils = Class.create();
+DineSmartOrderUtils.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+
+    getMenuItemPrice: function() {
+        var itemId = this.getParameter('sysparm_item_id');
+        gs.info("## DINE_SMART_DEBUG ##: Script Include is running. Searching for Menu Item ID: " + itemId);
+
+        var gr = new GlideRecord('x_656484_dinesmart_menu_items');
+
+        if (gr.get(itemId)) {
+            gs.info("## DINE_SMART_DEBUG ##: Found item: " + gr.getDisplayValue() + ", Price: " + gr.getValue('price'));
+            return gr.getValue('price');
+        }
+
+        gs.info("## DINE_SMART_DEBUG ##: Item not found.");
+        return '0.00';
+    },
+
+    type: 'DineSmartOrderUtils'
+});
+]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-01 16:55:22</sys_created_on>
+        <sys_id>fc055394c3b322104a82f1d4e401319e</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>DineSmartOrderUtils</sys_name>
+        <sys_package display_value="DineSmart" source="x_656484_dinesmart">c60ad7aec36f22104a82f1d4e4013179</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="DineSmart">c60ad7aec36f22104a82f1d4e4013179</sys_scope>
+        <sys_update_name>sys_script_include_fc055394c3b322104a82f1d4e401319e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-14 17:29:33</sys_updated_on>
+    </sys_script_include>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>fc055394c3b322104a82f1d4e401319e</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-01 16:55:21</sys_created_on>
+        <sys_id>4035dbd0c3b322104a82f1d4e4013169</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-01 16:55:21</sys_updated_on>
+        <table>sys_script_include</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>
